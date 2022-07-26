@@ -1,0 +1,122 @@
+.main{
+    background-color: rgb(209 213 219);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Gurajada', serif;
+    height: 100%;
+    }
+
+    .wrapper{
+      display: flex;
+      margin: 0;
+      border-radius: 25px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      width: 56rem;
+      background-color: #112B3C;
+      height: 600px;
+    }
+    .signUp{
+      display: flex;
+      flex-direction: column;
+      background-color: #112B3C;
+      color: white; 
+      font-size: 16px;
+      text-align: center;
+      width: 60%;
+      padding: 5px;
+      padding-top: 120px;
+      align-items: center;
+      justify-content: center;
+      border-top-left-radius: 25px;
+      border-bottom-left-radius: 25px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+      /* height: 750px; */
+    }
+
+    .wrapper ::-webkit-scrollbar{
+        display: none;
+    }
+    .wrapper {
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+        scrollbar-width: none;
+    }
+
+    .formLogin{
+        display: flex;
+      flex-direction: column;
+      margin-top: 5px;
+      align-items:  center;
+      justify-items: center;
+    }
+    .formLogin label{
+      justify-content: left;
+      text-align: left;
+      display: inline-block;
+      width: 280px;
+      margin: 7px;
+      font-size: 17px;
+    }
+    .formLogin input{
+      width: 7.5cm;
+      height: 30px;
+    }
+    
+    .signIn{
+      display: flex;
+    flex-direction: column;
+    width: 40%;
+    background-color: #EC3237;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    text-align:center ;
+    font-size: 25px;
+    padding: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    }
+    
+    .butSignin{
+      border: 2px solid white;
+      border-radius: 9px;
+      width: 100px;
+      padding: 5px;
+      font-size: 18px;
+      box-shadow: 0 1px white;
+    }
+    .butSignin:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold
+    }
+    .butSignin:active{
+      background-color: white;
+      color: black;
+      transform: translateY(2px);
+    }
+    
+    .butSignup{
+      border: 2px solid white;
+      border-radius: 9px;
+      width: 100px;
+      padding: 5px;
+      font-size: 18px;
+      box-shadow: 0 1px white;
+      margin-top: 30px;
+    }
+    .butSignup:hover{
+    background-color: white;
+    color: black;
+    font-weight: bold
+    }
+    .butSignup  :active{
+      background-color: white;
+      color: black;
+      transform: translateY(2px);
+    }
+    
+    

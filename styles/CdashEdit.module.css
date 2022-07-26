@@ -1,0 +1,209 @@
+.main{
+    background-color: #D1E0EE;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Gurajada', serif;
+    height: 100%;
+    }
+
+.header{
+    background-color:#112B3C ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 65px;
+    /* flex-direction: row; */
+}
+
+.logo{
+  margin-top: 5px;
+}
+
+.headerRight{
+  float: right;
+  line-height: 26px;
+  position: absolute;
+  top: 2.7%;
+  right: 10px;
+}
+
+.icon {
+  margin: 0px 20px 0px 20px ;
+}
+
+.icon2{
+  margin : 0px 20px 0px 10px
+}
+
+.footer{
+  background-color: #112B3C;
+  height: 40px;
+  position:fixed;
+  bottom:0;
+  left:0;
+  width:100%;
+}
+
+.content {
+    background-color: white;
+    width: 100%;
+    position: fixed;
+    height: 640px;
+    top: 70px;
+    display: flex;
+    margin: 0px 15px 0px 7px; 
+    padding-left: 40px;
+    padding-top: 20px;
+}
+
+
+.left .formLogin{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: 150px;
+    align-items:  center;
+    justify-items: center;
+  }
+  .left .formLogin label{
+    justify-content: left;
+    text-align: left;
+    display: inline-block;
+    width: 280px;
+    margin: 25px 0px 10px 0px;
+    font-size: 18px;
+  }
+  .left .formLogin input{
+    width: 7.5cm;
+    height: 30px;
+    /* border: none; */
+    border-bottom: 1px solid darkgrey;
+  }
+
+  .right .formLogin{
+    float: right;
+    margin-top: 21px;
+    margin-left: 200px;
+    align-items:  center;
+    justify-items: center;
+  }
+
+  .right .formLogin label{
+    justify-content: right;
+    text-align: left;
+    display: block;
+    width: 580px;
+    margin: 25px 0px 10px 0px;
+    font-size: 18px;
+  }
+
+  .right .formLogin input{
+    width: 7.5cm;
+    height: 30px;
+    /* border: none; */
+    border-bottom: 1px solid darkgrey;
+    
+  }
+
+  .formLogin label{
+    font-weight: bold;
+  }
+
+  .cancelBut{
+    display: flex;
+    position: fixed;
+    top: 87%;
+    left: 80%;
+    color:  gray;
+    /* margin: 20px; */
+    right: 200px;
+    border: 2px solid #d9d9d9;
+    background-color: white;
+    justify-content: center;
+    width: 80px;
+    border-radius: 4px;
+    font-weight:  bold;
+    padding: 5px;
+    font-size: 18px;
+    box-shadow: 0 1px white;
+    height: 35px;
+    
+  }
+
+  .saveBut{
+    display: flex;
+    position: fixed;
+    top: 87%;
+    left: 86%;
+    color: white;
+    /* margin: 20px; */
+    right: 200px;
+    border: 2px solid #d9d9d9;
+    background-color: #112B3C;
+    justify-content: center;
+    width: 80px;
+    border-radius: 4px;
+    font-weight:  bold;
+    padding: 5px;
+    font-size: 18px;
+    box-shadow: 0 1px white;
+    height: 35px;
+    
+  }
+
+  .changeBut{
+    display: flex;
+    position: fixed;
+    top: 87%;
+    left: 12.7%;
+    right: 200px;
+    border: 2px solid #d9d9d9;
+    color: white;
+    background-color: #112B3C;
+    justify-content: center;
+    width: 200px;
+    border-radius: 4px;
+    /* font-weight:  bold; */
+    padding: 5px;
+    font-size: 18px;
+    box-shadow: 0 1px white;
+    height: 35px;
+  }
+
+  .modal {
+    font-size: 12px;
+    border: 2px solid black;
+  }
+  .modal .content {
+    width: 50%;
+    padding: 10px 5px;
+  }
+
+  .modal .close {
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    padding: 2px 5px;
+    line-height: 20px;
+    right: -10px;
+    top: -10px;
+    font-size: 24px;
+    background: #ffffff;
+    border-radius: 18px;
+    border: 1px solid #cfcece;
+  }
+
+  .modal .formLogin label{
+    justify-content: center;
+    text-align: left;
+    display: block  ;
+    justify-content: center;
+    width: 80px;
+    border-radius: 4px;
+    font-weight:  bold;
+    padding: 5px;
+    font-size: 18px;
+    box-shadow: 0 1px white;
+    height: 35px;
+  }
+  
