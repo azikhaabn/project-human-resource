@@ -1,12 +1,10 @@
-import React from 'react'
+import React from "react";
 import Head from "next/head";
 import Image from "next/image";
-import Link from "next/link";
-import styles from "/styles/Edashboard.module.css";
+import styles from "/styles/Dashboard.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBank, faBars, faBuilding, faBuildingColumns, faBuildingLock, faCalendar, faCalendarAlt, faCalendarCheck, faCalendarDay, faCalendarDays, faCalendarTimes, faEnvelope, faHome, faIdCard, faIdCardAlt, faMoneyBill, faSdCard, faTimesSquare, faUser, faUserAlt, faUserAltSlash, faUserCheck, faUsersBetweenLines } from "@fortawesome/free-solid-svg-icons";
-
-
+import { faA, faBars, faBuilding, faCaretRight, faCircleInfo, faEnvelope, faMoneyBillTransfer, faSignal, faUser, faUserPlus } from "@fortawesome/free-solid-svg-icons";
+import EDashboard from "./Edashboard";
 
 export default function Dashboard() {
   return (
@@ -19,112 +17,142 @@ export default function Dashboard() {
 
       <main className={styles.main}>
         <div className={styles.header}>
-          <div className={styles.wrapper}>
-           <div className={styles.Sidebar}>
-            
-               <a href="#" class="active">
-                <FontAwesomeIcon
-                className={styles.icon}
-                icon={faHome}
-                style={{ fontSize: "18", color: "black" }}
-                />
-                <span class="item">Dashboard</span>
-                </a>
-                <ul> 
-                  <li><a href="#">Employees</a></li>
-                </ul>
-                
-              <a href="#">
-              <FontAwesomeIcon
-                className={styles.icon}
-                icon={faCalendarDays}
-                style={{ fontSize: "18", color: "black" }}
-                />
-                <span class="item">Time Management</span>
-                </a>
-                <ul>
-                  <li><a href="#">Time Off</a></li>
-                  <li><a href="#">Attendance</a></li>
-                  <li><a href="#">Schedule</a></li>
-                  <li><a href="#">Calender</a></li>
-                  <li><a href="#">Timesheet</a></li>
-                </ul>
-
-              <a href="#">
-              <FontAwesomeIcon
-                className={styles.icon}
-                icon={faUserCheck}
-                style={{ fontSize: "18", color: "black" }}
-                />
-              <span class="item">Finance</span>
-                </a>
-                <ul>
-                  <li><a href="#">Reimbursement</a></li>
-                  <li><a href="#">Cash Advance</a></li>
-                  <li><a href="#">Loan</a></li>
-                </ul>
-                
-              <a href="#">
-              <FontAwesomeIcon
-                className={styles.icon}
-                icon={faMoneyBill}
-                style={{ fontSize: "18", color: "black" }}
-                />
-              <span class="item">Payroll</span>
-              </a>
-              
-              <a href="#">
-              <FontAwesomeIcon
-                className={styles.icon}
-                icon={faBuilding}
-                style={{ fontSize: "18", color: "black" }}
-                />
-              <span class="item">Company</span>
-              </a>
-           </div>
-           <div class="section">
-            <div class="top_navbar">
-              <div class="hamburger">
-                <a href="#">
-                  <FontAwesomeIcon
-                  className={styles.icon3}
-                  icon={faBars}
-                  style={{ fontSize: "30", color: "white" }}
-                  />
-                  </a>
-              </div>
-            </div>
-           </div>
-          </div>
-
+          <FontAwesomeIcon className={styles.icon} icon={faBars} style={{ fontSize: 32, color: "white" }} />
           <div className={styles.logo}>
-            <Image
-              src="/EasyHandler_Hitam.png"
-              alt="logo"
-              width={50}
-              height={50}
-            />
+            <Image src="/EasyHandler_Hitam.png" alt="logo" width={50} height={50} />
           </div>
-          
           <div className={styles.headerRight}>
-            <FontAwesomeIcon
-              className={styles.icon2}
-              icon={faEnvelope}
-              style={{ fontSize: 29, color: "white" }}
-            />
-            <FontAwesomeIcon
-              className={styles.icon2}
-              icon={faUser}
-              style={{ fontSize: 29, color: "white" }}
-            />
+            <FontAwesomeIcon className={styles.icon2} icon={faEnvelope} style={{ fontSize: 29, color: "white" }} />
+            <FontAwesomeIcon className={styles.icon2} icon={faUser} style={{ fontSize: 29, color: "white" }} />
           </div>
         </div>
+
+        {/* <EDashboard /> */}
+
+        <div className={styles.content}></div>
+
+        <div className={styles.content}>
+          <div className={styles.contentHead}>
+            <h3>PT Hexaon Business Mitrasindo</h3>
+            <p>good afternoon, ester!</p>
+            <p className={styles.text}>it's thursday 19 may 2022</p>
+          </div>
+
+          <div className={styles.buttonHead}>
+            <h4>Shortcut</h4>
+            <ul>
+              <li>
+                <a href="#">Live Attendance</a>
+              </li>
+              <li>
+                <a href="#">Request Reimbursement</a>
+              </li>
+              <li>
+                <a href="#">Request Time Off</a>
+              </li>
+              <li>
+                <a href="#">More Request</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div className={styles.card1}>
+          <h3>Employment Status</h3>
+          <div className="parcial">
+            <div className="info">
+              <div className="percentageNum"></div>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.card2}>
+          <h3>Gender Diversity</h3>
+        </div>
+
+        <div className={styles.card3}>
+          <ul>
+            <li>
+              <a href="#">Announcement</a>
+            </li>
+            <li>
+              <a href="#">Contract & Probation</a>
+            </li>
+            <li>
+              <a href="#">Tasks</a>
+            </li>
+            <li>
+              <a href="#">Polings</a>
+            </li>
+          </ul>
+          <hr />
+        </div>
+
+        <div className={styles.card4}></div>
+
+        <div className={styles.card5}>
+          <div className={styles.quickl}>
+            <h5>Quick Link</h5>
+            <ul>
+              <li>
+                <a href="#">
+                  <FontAwesomeIcon className={styles.icon} icon={faCircleInfo} styles={{ fontSize: "10", color: "black" }} />
+                  My Info
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <FontAwesomeIcon className={styles.icon} icon={faUserPlus} styles={{ fontSize: "10", color: "black" }} />
+                  Add Employee
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <FontAwesomeIcon className={styles.icon} icon={faMoneyBillTransfer} styles={{ fontSize: "10", color: "black" }} />
+                  Employee Transfer
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <FontAwesomeIcon className={styles.icon} icon={faBuilding} styles={{ fontSize: "10", color: "black" }} />
+                  Company Setting
+                </a>
+              </li>
+            </ul>
+
+            <div className={styles.app}>
+              <h5>Application</h5>
+              <ul>
+                <li><a href="#"><FontAwesomeIcon className={styles.icon} icon={faSignal} styles={{ fontSize: "10", color: "black" }} />Performance Review</a></li>
+              </ul>
+            </div>
+
+            <div className={styles.dezhl}>
+              <h5>Download EZHL</h5>
+              <ul>
+                <li><a href="#"><FontAwesomeIcon className={styles.icon} icon={faA} styles={{ fontSize: "10", color: "black" }} />App Store</a></li>
+                <li><a href="#"><FontAwesomeIcon className={styles.icon} icon={faCaretRight} styles={{ fontSize: "10", color: "black" }} />Google Play</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className={styles.card6}></div>
+
+        <div className={styles.card7}></div>
+
+        <div className={styles.card8}>
+          <h3>Job Level</h3>
+        </div>
+
+        <div className={styles.card9}>
+          <h3>Length Of Sevice</h3>
+        </div>
+
         <footer>
           <div className={styles.footer}></div>
         </footer>
       </main>
     </div>
-
-
-  )
+  );
 }

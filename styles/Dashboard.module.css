@@ -1,0 +1,285 @@
+/* .main {
+    background-color: #D1E0EE;
+    min-height: 250vh;
+    margin: 0;
+    font-family: 'Gurajada', serif;
+    height: 100%;
+} */
+
+/* .header {
+    background-color: #112B3C;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 1px;
+    flex-direction: row;
+} */
+
+.logo {
+    margin-top: 5px;
+}
+
+.headerRight {
+    float: right;
+    line-height: 26px;
+    position: absolute;
+    top: 2.7%;
+    right: 10px;
+}
+
+.icon {
+    margin: 0px 5px 0px 5px;
+}
+
+.icon2 {
+    margin: 0px 20px 0px 10px
+}
+
+.footer {
+    background-color: #112B3C;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: auto;
+}
+
+.content {
+    background-color: white;
+    width: 1196px;
+    position: absolute;
+    height: 230px;
+    top: 70px;
+    display: flex;
+    margin: 5px 15px 5px 20px;
+    padding-left: 40px;
+    padding-top: 20px;
+    border-radius: 10px;
+}
+
+.contentHead h3 {
+    width: auto;
+    font-size: 20px;
+    margin-top: 0%;
+    height: 30px;
+    font-weight: bolder;
+    position: absolute;
+}
+
+.contentHead p {
+    font-size: 15px;
+    position: absolute;
+    left: 6%;
+    top: 0%;
+    margin-top: 50px;
+    font-weight: bold;
+}
+
+.contentHead .text {
+    font-size: 15px;
+    position: absolute;
+    top: 10%;
+    font-weight: bold;
+}
+
+.buttonHead h4 {
+    font-size: 20px;
+    font-weight: bolder;
+    position: absolute;
+    top: 38%;
+    left: 3%;
+    font-weight: bold;
+}
+
+.buttonHead ul li {
+    list-style: none;
+    display: inline-block;
+    width: 12em;
+    height: 2.5em;
+    text-align: center;
+    padding-top: 10px;
+    background-color: #112B3C;
+    color: #ffffff;
+    border-radius: 20px;
+    margin: 8em 70px 0 0;
+    position: relative;
+    left: -4%;
+}
+
+.card1 {
+    position: absolute;
+    top: 56.5%;
+    left: 0.5%;
+    width: 29%;
+    height: 70%;
+    background-color: #ffffff;
+    margin:0 0 0 15px;
+    border-radius: 10px;
+}
+
+.card1 h3 {
+    font-size: 25px;
+    margin: 15px 0 30px 10px;
+}
+
+.progress {
+    width: 94%;
+    height: 3%;
+    background-color: #112B3C;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.progress1 {
+    text-align: right;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.card2 {
+    position: absolute;
+    top: 128%;
+    left: 0.5%;
+    width: 29%;
+    height: 70%;
+    background-color: #ffffff;
+    margin:0 0 0 15px;
+    border-radius: 10px;
+}
+
+.card2 h3 {
+    font-size: 25px;
+    margin: 15px 0 30px 10px;
+}
+
+.card3 {
+    width: 450px;
+    height: 120px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    right: 40%;
+    top: 59%;
+    left: 32%;
+}
+
+.card3 ul {
+    text-decoration: underline;
+    margin: 10px 0 0 -10px;
+}
+
+.card3 ul li{
+    list-style: none;
+    display: inline-block;
+    font-size: 12px;
+    padding: 5px;
+    margin: 0 25px 0 0;
+    border-radius: 5px;
+}
+
+.card3 ul li:hover{
+    text-align: center;
+    background-color: #112B3C;
+    color: #ffffff;
+}
+
+.card4 {
+    width: 450px;
+    height: 140px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    right: 40%;
+    top: 82%;
+    left: 32%;
+}
+
+.card5 {
+    width: 450px;
+    height: 170px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    right: 40%;
+    top: 108.7%;
+    left: 32%;
+}
+
+.card6 {
+    width: 450px;
+    height: 170px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    right: 40%;
+    top: 140.8%;
+    left: 32%;
+}
+
+.card7 {
+    width: 450px;
+    height: 170px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    position: absolute;
+    right: 40%;
+    top: 172.8%;
+    left: 32%;
+}
+
+.quickl h5 {
+    text-decoration: underline;
+    margin-left: 20px;
+    margin-top: 12px;
+}
+
+.quickl ul {
+    margin-top: -10px;
+}
+
+.quickl ul li {
+    list-style: none;
+    font-size: 12px;
+    margin: 10px 0 5px -25px;
+}
+
+.app {
+    margin: -132px 0 0 145px;
+}
+
+.dezhl {
+    margin: -58px 0 0 310px;
+}
+
+.card8 {
+    position: absolute;
+    left: 69%;
+    top: 56.5%;
+    width: 29%;
+    height: 70%;
+    background-color: #ffffff;
+    margin: 0 0 0 15px;
+    border-radius: 10px;
+}
+
+.card8 h3 {
+    font-size: 25px;
+    margin: 15px 0 30px 10px;
+}
+
+.card9 {
+    position: absolute;
+    top: 128%;
+    left: 69%;
+    width: 29%;
+    height: 70%;
+    background-color: #ffffff;
+    margin: 0 0 0 15px;
+    border-radius: 10px;
+}
+
+.card9 h3 {
+    font-size: 25px;
+    margin: 15px 0 30px 10px;
+}
