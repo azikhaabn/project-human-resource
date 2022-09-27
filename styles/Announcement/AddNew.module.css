@@ -1,0 +1,31 @@
+.modal {
+    /* position: relative; */
+    width: 750px;
+    height: 550px;
+    background-color: #fff;
+    margin: auto;
+    box-shadow: 0 0 0 10px #e0dfdf;
+    position: absolute;
+    left: -25%;
+    top: 60%;
+    overflow: scroll;
+    overflow-x: hidden;
+   
+}
+
+
+.modalContent h3 {
+    color: #980f1b;
+}
+
+.inputsubject{
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.inputsubject:focus,
+.inputsubject:active{
+    border-bottom: 1px solid black;
+    box-shadow: none;
+}

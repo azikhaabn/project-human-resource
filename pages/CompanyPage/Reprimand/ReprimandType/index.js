@@ -2,7 +2,7 @@ import React, { Component, useMemo, useState } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import Link from "next/link";
-import styles from "/styles/Reprimand/ReprimandList.module.css";
+import styles from "/styles//Reprimand/ReprimandType.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faBars,
@@ -17,11 +17,9 @@ import { COLUMNS } from "./columns";
 import MOCK_DATA from "./MOCK_DATA.json";
 import { useGlobalFilter, useTable, usePagination } from "react-table";
 import AddNew from "./AddNew";
-import Filter from "./Filter";
 
 
-
-export default function ReprimandList() {
+export default function ReprimandType() {
 
   const columns = useMemo(() => COLUMNS, []);
 	const data = useMemo(() => MOCK_DATA, []);
@@ -94,8 +92,8 @@ export default function ReprimandList() {
         </div>
         <div className={styles.box}>
           <div className={styles.link}>
-            <a href="/CompanyPage/Reprimand/ReprimandList">Reprimand List</a>
-            <a href="/CompanyPage/Reprimand/ReprimandType">Reprimand Type</a>
+             <a href="/CompanyPage/Reprimand/ReprimandList">Reprimand List</a>
+             <a href="/CompanyPage/Reprimand/ReprimandType">Reprimand Type</a>
           </div>
           <div className={styles.content}>
             <div class="d-flex justify-content-between align-items-center table-light">
@@ -106,14 +104,6 @@ export default function ReprimandList() {
                 data-bs-target="#modalCreate"
               >
                 ADD NEW
-              </button>
-              <button
-                type="button"
-                class="btn btn-outline-secondary btn-sm mt-4 me-4 mb-3"
-                data-bs-toggle="modal"
-                data-bs-target="#modalFilter"
-              >
-                FILTER
               </button>
             </div>
             <section class="section-sellect-search mb-4">
@@ -236,23 +226,11 @@ export default function ReprimandList() {
           class="modal fade"
           id="modalCreate"
           tabindex="-1"
-          aria-labelledby="modalAdd"
+          aria-labelledby="modalCreate"
           aria-hidden="true"
         >
           <div class="modal-dialog">
             <AddNew />
-          </div>
-        </div>
-
-        <div
-          class="modal fade"
-          id="modalFilter"
-          tabindex="-1"
-          aria-labelledby="modalFilter"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog">
-            <Filter />
           </div>
         </div>
       </main>
