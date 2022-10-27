@@ -91,6 +91,8 @@
   padding: 5px;
   font-size: 18px;
   box-shadow: 0 1px white;
+  text-decoration: none;
+  color: white;
 }
 .butSignup:hover{
 background-color: white;
@@ -111,6 +113,8 @@ font-weight: bold
   font-size: 18px;
   box-shadow: 0 1px white;
   margin-top: 10px;
+  text-decoration: none;
+  color: white;
 }
 .butSignin:hover{
 background-color: white;

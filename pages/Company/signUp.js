@@ -2,9 +2,69 @@ import Head from "next/head";
 import Image from "next/image";
 import styles from "/styles/CsignUp.module.css";
 import Link from "next/link";
+import { useState } from "react";
+
+export default function Signup(data) {
+  const [userInput, setUserInput] = useState({});
+  const [companyData, setCompanyData] = useState(data);
+
+  async function saveCompanyData(e) {
+    e.preventDefault();
+    let headers = new Headers();
+
+    headers.append("Content-Type", "application/json");
+    headers.append("Accept", "application/json");
+    // headers.append('Authorization', 'Basic ' + base64.encode(username + ":" +  password));
+    headers.append("Origin", "http://localhost:3000");
+
+    // console.log(userInput)
+    const res = await fetch("http://localhost:3000/auth/signup/company", {
+      mode: "cors",
+      credentials: "include",
+      method: "POST",
+      headers: headers,
+      body: JSON.stringify(userInput),
+    }).then((response) => response.json())
+      .then (company => {
+        setCompanyData({...companyData, company})
+      });
+    
+
+    // (response =>
+    //   console.log(response.json()))
+    // .then(company => {
+    //   setCompanyData({...companyData, company});
+    // });
+    console.log(res?.message);
+    console.log(res?.statusCode);
+
+    setUserInput({
+      ...userInput,
+      companyName: "",
+      email: "",
+      companyPhoneNumber: "",
+      companyAddress: "",
+      password: "",
+      picEmail: "",
+      picPhoneNumber: "",
+    });
+    console.log(companyData);
+  }
+
+  function validateForm() {
+    var pw1 = document.getElementById("password").value;
+    var pw2 = document.getElementById("Cpassword").value;
+    var fn = document.getElementById("name").value
+  
 
 
-export default function Signup() {
+    if (pw1 != pw2) {
+      alert("Passwords did not match");
+    } else {
+      alert("Password created successfully");
+    }
+  }
+
   return (
     <div className={styles.container}>
       <Head>
@@ -24,40 +84,91 @@ export default function Signup() {
               />
             </div>
             <h2>Create Your Account</h2>
-            <div className={styles.formLogin}>
+
+            <form onSubmit="return validateForm()" className={styles.formLogin}>
               <label>Company Name</label>
-              <input name="name" type="text"></input>
-            </div>
+              <input
+                id="name"
+                type="text"
+                value={userInput.companyName}
+                onChange={(e) =>
+                  setUserInput({ ...userInput, companyName: e.target.value })
+                }
+              ></input>
 
-            <div className={styles.formLogin}>
               <label>Company Email</label>
-              <input name="email" type="email"></input>
-            </div>
+              <input
+                id="email"
+                type="email"
+                value={userInput.email}
+                onChange={(e) =>
+                  setUserInput({ ...userInput, email: e.target.value })
+                }
+              ></input>
 
-            <div className={styles.formLogin}>
               <label>Company Number</label>
-              <input name="Phone" type="text" ></input>
-            </div>
+              <input
+                id="Phone"
+                type="text"
+                value={userInput.companyPhoneNumber}
+                onChange={(e) =>
+                  setUserInput({
+                    ...userInput,
+                    companyPhoneNumber: e.target.value,
+                  })
+                }
+              ></input>
 
-            <div className={styles.formLogin}>
               <label>Company Address</label>
-              <input name="address" type="address"></input>
-            </div>
+              <input
+                id="address"
+                type="address"
+                value={userInput.companyAddress}
+                onChange={(e) =>
+                  setUserInput({ ...userInput, companyAddress: e.target.value })
+                }
+              ></input>
 
-            <div className={styles.formLogin}>
               <label>Password</label>
-              <input name="password" type="password"></input>
-            </div>
+              <input
+                id="password"
+                type="password"
+                value={userInput.password}
+                onChange={(e) =>
+                  setUserInput({ ...userInput, password: e.target.value })
+                }
+              ></input>
 
-            <div className={styles.formLogin}>
               <label>Confirm Password</label>
-              <input name="Cpassword" type="password"></input>
-            </div>
+              <input id="Cpassword" type="password"></input>
+
+              <label>PIC Email</label>
+              <input
+                id="PICEmail"
+                type="email"
+                value={userInput.picEmail}
+                onChange={(e) =>
+                  setUserInput({ ...userInput, picEmail: e.target.value })
+                }
+              ></input>
+
+              <label>PIC Number</label>
+              <input
+                id="PICNum"
+                type="text"
+                value={userInput.picPhoneNumber}
+                onChange={(e) =>
+                  setUserInput({ ...userInput, picPhoneNumber: e.target.value })
+                }
+              ></input>
+            </form>
+
             <Link href="/Company/signUp2">
-              <a className={styles.butSignup}>Next</a>
+              <a className={styles.butSignup} onClick={saveCompanyData}>
+                Sign Up
+              </a>
             </Link>
           </div>
-
           <div className={styles.signIn}>
             <p>Already have an account?</p>
             <Link href="/">
@@ -69,3 +180,12 @@ export default function Signup() {
     </div>
   );
 }
+
+// const cors=require("cors");
+// const corsOptions ={
+//    origin:'*',
+//    credentials:true,            //access-control-allow-credentials:true
+//    optionSuccessStatus:200,
+// }
+
+// Signup.use(cors(corsOptions)) // Use this after the variable declaration

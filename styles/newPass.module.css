@@ -1,102 +1,103 @@
 .main{
-    background-color: rgb(209 213 219);
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    font-family: 'Gurajada', serif;
-    height: 100%;
-  }
-  
-  
-  .wrapper{
-    display: flex;
-    margin: 0;
-    border-radius: 25px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    width: 56rem;
-    background-color: #112B3C;
-    height: 600px;
-  }
+  background-color: rgb(209 213 219);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  font-family: 'Gurajada', serif;
+  height: 100%;
+}
 
-  .forgot{
-    display: flex;
-    flex-direction: column;
-    background-color: #112B3C;
-    color: white; 
-    font-size: 20px;
-    text-align: center;
-    width: 60%;
-    padding: 5px;
-    align-items: center;
-    justify-content: center;
-    border-top-left-radius: 25px;
-    border-bottom-left-radius: 25px;
-    padding-bottom: 60px;
-  }
 
-  .forgot p {
-    padding-left: 50px;
-    padding-right: 50px;
-  }
+.wrapper{
+  display: flex;
+  margin: 0;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  width: 56rem;
+  background-color: #112B3C;
+  height: 600px;
+}
 
-  .formReset{
-    display: flex;
-    flex-direction: column;
-    margin-top: 4px;
-    align-items:  center;
-    align-content: center;
-    justify-items: center;
-  }
-  .formReset label{
-    justify-content: left;
-    text-align: left;
-    display: inline-block;
-    width: 280px;
-    /* margin: 10px; */
-    font-size: 17px;
-  }
-  .formReset input{
-    width: 7.5cm;
-    height: 30px;
-  }
-  
-  .logoForgot{
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    background-color: #EC3237;
-    color: white;
-    align-items: center;
-    justify-content: center;
-    text-align:center ;
-    font-size: 18px;
-    padding: 25px;
-    border-bottom-right-radius: 25px;
-    border-top-right-radius: 25px;
-  }
-  
-  .butReset{
-    border: 2px solid white;
-    border-radius: 9px;
-    /* width: px; */
-    margin-top: 15px;
-    padding: 5px;
-    font-size: 18px;
-     box-shadow: 0 1px white;
-  }
-  .butReset:hover{
+.forgot{
+  display: flex;
+  flex-direction: column;
+  background-color: #112B3C;
+  color: white; 
+  font-size: 20px;
+  text-align: center;
+  width: 60%;
+  padding: 5px;
+  align-items: center;
+  justify-content: center;
+  border-top-left-radius: 25px;
+  border-bottom-left-radius: 25px;
+  padding-bottom: 60px;
+}
+
+.forgot p {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.formReset{
+  display: flex;
+  flex-direction: column;
+  margin-top: 4px;
+  align-items:  center;
+  align-content: center;
+  justify-items: center;
+}
+.formReset label{
+  justify-content: left;
+  text-align: left;
+  display: inline-block;
+  width: 280px;
+  /* margin: 10px; */
+  font-size: 17px;
+}
+.formReset input{
+  width: 7.5cm;
+  height: 30px;
+}
+
+.logoForgot{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  background-color: #EC3237;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  text-align:center ;
+  font-size: 18px;
+  padding: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.butReset{
+  border: 2px solid white;
+  border-radius: 9px;
+  /* width: px; */
+  margin-top: 15px;
+  padding: 5px;
+  font-size: 18px;
+   box-shadow: 0 1px white;
+   text-decoration: none;
+   color: white;
+}
+.butReset:hover{
+background-color: white;
+color: black;
+font-weight: bold
+}
+.butReset:active{
   background-color: white;
   color: black;
-  font-weight: bold
-  }
-  .butReset:active{
-    background-color: white;
-    color: black;
-    transform: translateY(2px);
-  }
-  
+  transform: translateY(2px);
+}
 
-  
-  
+
+

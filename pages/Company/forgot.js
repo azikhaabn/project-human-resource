@@ -40,6 +40,7 @@ export default function ForgotPass() {
                 width={250}
                 height={250}
               />
+
           </div>
         </div>
       </main>

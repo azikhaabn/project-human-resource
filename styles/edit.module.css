@@ -1,0 +1,38 @@
+.main{
+    background-color: #ffffff;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Gurajada', serif;
+    height: 100%;
+    }
+
+.header{
+    background-color:#112B3C ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 65px;
+    /* flex-direction: row; */
+}
+
+.logo{
+  margin-top: 5px;
+}
+
+.headerRight{
+  float: right;
+  line-height: 26px;
+  position: absolute;
+  top: 2.7%;
+  right: 10px;
+}
+
+.icon {
+  margin: 0px 20px 0px 20px ;
+}
+
+.icon2{
+  margin : 0px 20px 0px 10px
+}
+
+

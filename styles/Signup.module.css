@@ -75,6 +75,8 @@
     padding: 5px;
     font-size: 18px;
     box-shadow: 0 1px white;
+    color: white;
+    text-decoration: none;
   }
   .butSignin:hover{
   background-color: white;
@@ -94,6 +96,8 @@
     padding: 5px;
     font-size: 18px;
     box-shadow: 0 1px white;
+    text-decoration: none;
+    color: white;
     margin-top: 30px;
   }
   .butSignup:hover{

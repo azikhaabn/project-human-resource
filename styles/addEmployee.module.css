@@ -1,0 +1,112 @@
+.main{
+    background-color: #D1E0EE;
+    min-height: 100vh;
+    margin: 0;
+    height: 100%;
+   
+}
+
+.wrapper{
+    background-color: white;
+    /* display: flex; */
+    /* flex-direction: column; */
+    margin: 5px;
+    /* align-items: center; */
+}
+
+.content{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.sectionNum{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 650px;
+}
+
+.line{
+    flex: 1;
+    height: 2px;
+    background-color: gray;
+}
+
+
+
+.num{
+    border: 1px solid firebrick;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    line-height: 16px;
+    padding: 5px;
+    background-color: firebrick;
+    color: white;
+    margin: 5px;
+}
+
+.num1{
+    border: 1px solid gray;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    line-height: 16px;
+    padding: 5px;
+    background-color: white;
+    color: gray;
+    margin: 5px;
+}
+
+.label{
+    display: flex;
+    flex-direction: row;
+    word-spacing: 2px;
+}
+
+.label1{
+    position: relative;
+    left: -45%;
+}
+
+.label2{
+    position: relative;
+    left: -20%;
+    color: grey;
+}
+
+.label3{
+    position: relative;
+    left: 14%;
+    color: grey;
+}
+
+.label4{
+    position: relative;
+    left: 49%;
+    color: grey;
+}
+
+.form{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 50%;
+}
+
+.form label {
+    font-size: 18px;
+}
+
+.form p {
+    color: grey;
+}
+

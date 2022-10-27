@@ -1,0 +1,27 @@
+.header{
+    background-color:#112B3C ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 65px;
+}
+
+.logo{
+  margin-top: 5px;
+}
+
+.headerRight{
+  float: right;
+  line-height: 26px;
+  position: absolute;
+  top: 2.7%;
+  right: 10px;
+}
+
+.icon {
+  margin: 0px 20px 0px 20px ;
+}
+
+.icon2{
+  margin : 0px 20px 0px 10px
+}
