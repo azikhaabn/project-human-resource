@@ -1,0 +1,73 @@
+.modal {
+	width: 600px;
+	height: auto;
+	margin: auto;
+	background-color: #fff;
+	box-shadow: 0 0 0 10px #DEE3E1;
+	border-radius: 0;
+	border: 1px solid #e0dfdf;
+}
+
+.modalContent h3 {
+	color: #9F0111;
+}
+
+.modalBody {
+	font-size: 13px;
+}
+
+.modalBody input {
+	font-size: 12px;
+}
+
+.inputAssetsCategory {
+	font-size: 15px;
+	border-radius: 0;
+	border: none;
+	border-bottom: 2px solid #b6b6b6;
+}
+
+.inputAssetsCategory:focus,
+.inputAssetsCategory:active {
+	border-bottom: 2px solid #b6b6b6;
+	box-shadow: none;
+}
+
+.btnModal {
+	font-size: 10px;
+	font-weight: bold;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	border-radius: 10px;
+	border: 2px solid #7d7d7d;
+	color: #7d7d7d;
+	/* color: #88829f; */
+}
+
+.formLabel {
+	font-size: 14px;
+	margin-bottom: -5px !important;
+}
+
+.formSelect {
+	border: none;
+	border-radius: 0;
+	border-bottom: 2px solid #b6b6b6;
+	color: #7f7f7d;
+}
+
+.formSelect option {
+	font-size: 12px;
+}
+
+/* .formSelect:hover, */
+.formSelect:focus,
+.formSelect:active {
+	border-bottom: 2px solid #b6b6b6;
+	/* border: none !important; */
+	box-shadow: none;
+}
+
+/* .desc textarea {
+	height: 100px;
+} */

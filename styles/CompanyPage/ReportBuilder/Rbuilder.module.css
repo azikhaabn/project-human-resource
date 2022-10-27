@@ -1,0 +1,43 @@
+.main {
+    height: auto;
+    height: 100vh;
+}
+
+.box-builder {
+    width: 100px;
+    height: 100px;
+    background-color: #F2F4F7;
+}
+
+.bg-content {
+    width: 90%;
+    height: auto;
+    background-color: #F2F4F7;
+    margin: auto;
+}
+
+.heading {
+    margin: 5% 0 0 5%;
+}
+
+.btn-create {
+    background-color: #004992;
+    color: #fff;
+}
+
+.btn-create:hover {
+    background-color: red;
+}
+
+.btn-learn {
+    background-color: #FBFBFB;
+    color: #ACACB2;
+}
+
+.image {
+    width: 400px;
+}
+
+.box-left {
+    width: 400px;
+}

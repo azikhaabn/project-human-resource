@@ -1,0 +1,125 @@
+.main {
+	height: auto;
+}
+
+.h2 {
+	font-size: 20px;
+}
+
+.btn-cash {
+	border-radius: 5px;
+	color: #8b929f;
+	font-weight: 500;
+}
+
+.btn-cash:hover {
+	/* background: #f2f4f7; */
+	color: #0082D6;
+}
+
+.btn-cash-active {
+	background: #f2f4f7;
+	color: #000;
+}
+
+
+.content p {
+	color: #a9a4a1;
+}
+
+
+.sidebar {
+	height: 90vh;
+	border-right: 1px solid #e8e8e8;
+}
+
+.link{
+	color: #858585;
+}
+
+/* .link a{
+	margin-left: 5px;
+} */
+
+.link a:hover {
+  border-bottom: 1px solid gray;
+  color: gray;
+}
+
+.categories{
+	color: #858585;
+	margin-left: 10px;
+}
+
+.iconinfo{
+   color: #777777;
+   margin-left: 5px;
+}
+
+.areacontent{
+ padding: 20px 0px 0 350px;
+}
+
+.Label{
+    font-weight: 500;
+}
+
+.check{
+    margin-top: 10px;
+}
+
+.LabelCheck{
+    margin-top: 5px;
+}
+
+.inputname{
+    border-radius: 3px;
+}
+
+.input-date{
+    border-radius: 3px;
+}
+
+.inputdue{
+    border-radius: 3px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.InputDays{
+    display: inline-flex;
+}
+
+.InputDays label{
+    display: inline-flex;
+    top: 0; 
+    left: 5%;
+    height: 100%;
+    padding: 7px 15px;
+    background: #E9ECEF;
+    color: #495057;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.select-option{
+    border-radius: 3px;
+}
+
+.btnarea{
+    padding-left: 148px;
+    padding-top: 25px;
+}
+
+.btnCancel{
+    border: none;
+    background-color: #fff;
+    color: #8b929f;
+}
+
+.btnsubmit{
+    border-radius: 3px;
+}
+
+
+

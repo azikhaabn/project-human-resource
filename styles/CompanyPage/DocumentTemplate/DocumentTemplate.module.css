@@ -1,0 +1,85 @@
+.main{
+    background-color: #ffffff;
+    min-height: 150vh;
+    margin: 0;
+    font-family: 'Gurajada', serif;
+    height: 100%;
+    }
+
+.header{
+    background-color: #112B3C ;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 65px;
+    /* flex-direction: row; */
+}
+
+.logo{
+  margin-top: 5px;
+}
+
+.headerRight{
+  float: right;
+  line-height: 26px;
+  position: absolute;
+  top: 2.7%;
+  right: 10px;
+}
+
+.icon {
+  margin: 0px 20px 0px 20px ;
+}
+
+.create{
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+}
+
+.company p{
+    color: #3861c7;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2px 0 0 20px;
+    
+}
+
+.judul h2{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2px 0 0 20px;
+}
+
+.content{
+    background-color: #ffffff;
+    border: 1px solid #dee3e1;
+    border-radius: 3px;
+    margin: 30px 20px 0 20px;
+    width: 450px;
+    height: 200px;
+}
+
+.content h4{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin: 20px 0 0 25px;
+}
+
+.content p{
+    color: #7f7f7d;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 10px 0 0 25px;
+}
+
+.btndownload{
+    color: #3861c7;
+    background-color: #fff;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.icon3{
+  color: #7f7f7d;
+}
+
+.modal-dialog {
+    margin-right: 35rem;
+}

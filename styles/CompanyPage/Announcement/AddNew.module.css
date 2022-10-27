@@ -1,0 +1,66 @@
+.modal {
+    /* position: relative; */
+    width: 750px;
+    height: 550px;
+    background-color: #fff;
+    margin: auto;
+    box-shadow: 0 0 0 10px #e0dfdf;
+    position: absolute;
+    left: -25%;
+    top: 25%;
+    overflow: scroll;
+    overflow-x: hidden;
+   
+}
+
+
+.modalContent h3 {
+    color: #980f1b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Label{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+}
+
+.LabelCheck{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -10px;
+    margin-left: 10px;
+}
+
+.inputsubject{
+    border-radius: 0;
+    border: none;
+    border-bottom: 2px solid #d1cfcf;
+}
+
+.inputsubject:focus,
+.inputsubject:active{
+    border-bottom: 2px solid #d1cfcf;
+    box-shadow: none;
+}
+
+.btnupload{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.btnorganization{
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold;
+}
+
+.btnbranch{
+    border-radius: 8px;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold;
+    margin-left: 150px;
+}
+
+.filter{
+    margin: 0 15px 0 5px;
+}
+

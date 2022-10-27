@@ -1,0 +1,94 @@
+.main {
+    height: auto;
+}
+
+.h2 {
+    font-size: 18px;
+}
+
+.company-text {
+    font-size: 14px;
+    color: gray;
+}
+
+.all-tasks-text {
+    margin-top: -5px;
+}
+
+.btn-tasks {
+    border-radius: 5px;
+    color: #8b929f;
+    font-weight: 500;
+}
+
+.btn-tasks:hover {
+    background: #f2f4f7;
+    color: #000;
+}
+
+.btn-tasks-active {
+    background: #f2f4f7;
+    color: #000;
+}
+
+.task-content {
+    margin-top: 20px;
+}
+
+.last-item {
+    margin-left: auto;
+    align-self: flex-end;
+    align-content: flex-end;
+    margin-right: 16px;
+}
+
+.search-span {
+    border-right: none;
+    background-color: #fff;
+    color: #BABABE;
+}
+
+.search-input {
+    border-left: none;
+}
+
+.search-input:focus {
+    box-shadow: none;
+    border: 1px solid #CED4DA;
+    border-left: none;
+}
+
+.content p {
+    color: #a9a4a1;
+}
+
+.btn-create {
+    background-color: #005fbf;
+    color: #fff;
+}
+
+.btn-create:visited {
+    background-color: #005fbf;
+    color: #fff;
+}
+
+/* .border-links {
+    position: absolute;
+    border-bottom: 2px solid #000;
+} */
+
+.span-underline {
+    z-index: 10;
+    display: inline-block;
+    border-bottom: 2px solid red;
+    padding-bottom: 15px;
+}
+
+.links {
+    font-weight: 500;
+}
+
+.sidebar {
+    height: 65vh;
+    border-right: 1px solid #e8e8e8;
+}

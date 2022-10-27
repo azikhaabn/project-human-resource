@@ -1,0 +1,21 @@
+.main {
+    margin: auto;
+    width: 500px;
+    height: auto;
+}
+
+.form-label label{
+    font-weight: bold;
+}
+
+/* .text-area {
+    min-width: 100%
+} */
+
+.input-date {
+    width: 100px;
+}
+
+.check-box {
+    font-weight: lighter;
+}

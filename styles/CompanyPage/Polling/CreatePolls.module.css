@@ -1,0 +1,40 @@
+.modal {
+  width: 600px;
+  height: 480px;
+  background-color: #fff;
+  box-shadow: 0 0 0 10px #dee3e1;
+  border-radius: 0;
+  border: 1px solid #e0dfdf;
+}
+
+.modal {
+  padding: 10px;
+  overflow-y: scroll;
+}
+
+.input-group {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.input-group:focus {
+  box-shadow: none;
+  border-bottom: 1px solid #c1c1c1;
+}
+
+.input-option:focus {
+  box-shadow: none;
+  border: 1px solid #c1c1c1;
+}
+
+.btn-create {
+  font-size: 10px;
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+/* .footer {
+    position: fixed;
+    bottom: 20%;
+} */

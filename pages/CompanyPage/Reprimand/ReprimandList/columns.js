@@ -20,17 +20,17 @@ export const COLUMNS = [
 		Header: "Start Date",
 		Footer: "Start Date",
 		accessor: "Start_Date",
-        Cell: ({ value }) => {
-			return format(new Date(value), "dd-MM-yyyy");
-		},
+        // Cell: ({ value }) => {
+		// 	return format(new Date(value), "dd-MM-yyyy");
+		// },
 	},
 	{
 		Header: "Expired Date",
 		Footer: "Expired Date",
 		accessor: "Expired_Date",
-        Cell: ({ value }) => {
-			return format(new Date(value), "dd-MM-yyyy");
-		},
+        // Cell: ({ value }) => {
+		// 	return format(new Date(value), "dd-MM-yyyy");
+		// },
 	},
 	{
 		Header: "Status",

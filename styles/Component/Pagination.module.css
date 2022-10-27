@@ -1,0 +1,46 @@
+.row-paginate {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.text-show {
+    font-size: 14px;
+    letter-spacing: 0.01px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.number-page {
+    font-size: 22px;
+}
+
+.arrow-icon {
+    font-size: 14px;
+    color: #a5a5a5;
+    cursor: pointer;
+}
+
+.prev-page {
+    text-transform: uppercase;
+}
+
+.next-page {
+    text-transform: uppercase;
+}
+
+.page-link-next {
+    background-color: #9e9e9e;
+    color: #fff;
+    letter-spacing: 3px;
+}
+
+.page-link-next:hover {
+    background-color: #ccc;
+    color: #9e9e9e;
+    letter-spacing: 3px;
+}
+
+.page-link-prev {
+    color: #9e9e9e;
+}

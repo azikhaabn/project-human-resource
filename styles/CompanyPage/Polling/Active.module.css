@@ -1,0 +1,107 @@
+.main {
+	height: auto;
+	height: 100vh;
+}
+
+.image {
+	width: 100%;
+	height: auto;
+	margin-bottom: 5px;
+}
+
+/* Media Queries */
+@media (min-width: 480px) {
+	.header {
+		width: 100%;
+		height: auto;
+	}
+}
+
+.main-content {
+	height: auto;
+	margin: 10px 0;
+}
+
+.bg-content {
+	width: 95%;
+	background-color: #f8f7f7;
+	margin: 0 auto;
+	padding: 20px 0;
+}
+
+.content {
+	width: 95%;
+	background-color: #fff;
+	margin: auto;
+	border: 10px solid #dee3e1;
+}
+
+.row-sidebar {
+	height: 500px;
+}
+
+.sidebar {
+	height: 100%;
+	background-color: #dee3e1;
+}
+
+.btn-tasks {
+	font-weight: 700;
+	color: #949494;
+	background-color: #dee3e1;
+	margin: 0 -12px;
+	padding: 20px;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.btn-tasks:hover {
+	font-weight: 700;
+	color: #949494;
+	background-color: #fff;
+}
+
+.active {
+	color: #910111;
+	background-color: #fff;
+	cursor: pointer;
+	transition: 0.5s;
+}
+
+.active:hover {
+	color: #910111;
+}
+
+.icon-poll {
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.title-poll {
+	padding: 10px 8px 0 8px;
+}
+
+.title {
+	font-size: 36px;
+	font-weight: 500;
+	color: #910111;
+	margin-bottom: -5px;
+}
+
+.data-poll span {
+	font-size: 42px;
+	font-weight: 400;
+}
+
+.modal-2 {
+	height: 300px;
+	width: 300px;
+	margin: 0 auto;
+	box-shadow: 0 0 0 10px #dee3e1;
+}
+
+.btn-create {
+	font-size: 10px;
+	letter-spacing: 2px;
+	font-weight: bold;
+}

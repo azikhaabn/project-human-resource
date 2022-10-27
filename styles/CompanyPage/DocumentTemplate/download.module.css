@@ -1,0 +1,18 @@
+.modal{
+    height: 289px;
+    width: 478px;
+    margin: auto;
+    position: absolute;
+    left: 25%;
+    top: 20%;
+}
+
+.btnCancel{
+    color: #7f7f7d;
+    background-color: #fff;
+    border: none;
+}
+
+.title{
+    margin: 20px;
+}

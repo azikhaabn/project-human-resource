@@ -1,0 +1,75 @@
+/* .main {
+    height: 100vh;
+    
+} */
+
+.modal {
+    /* position: relative; */
+    width: 750px;
+    height: 550px;
+    background-color: #fff;
+    margin: auto;
+    box-shadow: 0 0 0 10px #e0dfdf;
+    position: absolute;
+    left: -25%;
+    top: 60%;
+    overflow: scroll;
+    overflow-x: hidden;
+   
+}
+
+
+.modalContent h3 {
+    color: #980f1b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.Label{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 5px;
+    font-size: small;
+}
+
+.select-option {
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 0;
+    width: 86vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.select-option option{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.select-option:focus {
+    box-shadow: none;
+}
+
+.btnFile{
+    margin: auto;
+}
+
+.inputcontent{
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.inputcontent:focus,
+.inputcontent:active{
+    border-bottom: 1px solid black;
+    box-shadow: none;
+}
+
+.input-date{
+    border-radius: 0;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.input-date:focus,
+.input-date:active{
+    border-bottom: 1px solid black;
+    box-shadow: none;
+}

@@ -1,0 +1,52 @@
+.main {
+	height: auto;
+	height: 100vh;
+}
+
+.bg-content {
+	background-color: #f8f7f7;
+	margin: 0 auto;
+}
+
+.row-img {
+	position: relative;
+	filter: brightness(30%) grayscale(70%);
+	display: block;
+}
+
+.text-img {
+	position: absolute;
+	z-index: 1;
+	bottom: 20px;
+	left: 20px;
+	color: #fff;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+.text-img:hover {
+	color: #fff;
+}
+
+.container {
+  position: relative;
+}
+
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer;
+	transition: 0.2s ease;
+	background-color: #66000b;
+}
+
+.container:hover .overlay {
+	opacity: 1;
+}

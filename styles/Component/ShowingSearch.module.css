@@ -1,0 +1,28 @@
+.form-label {
+  font-size: 14px;
+  margin-bottom: -5px !important;
+}
+
+.input-group {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #c0bfbf;
+  background-color: #f8f7f7;
+}
+
+.input-group:focus {
+  box-shadow: none;
+  border-bottom: 1px solid #c0bfbf;
+  background-color: #f8f7f7;
+}
+
+.span-icon {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #c0bfbf;
+  background-color: #f8f7f7;
+}
+
+.search-icon {
+  color: #bdbbbf;
+}

@@ -1,0 +1,157 @@
+.main {
+    height: auto;
+}
+
+.content {
+    margin: 30px auto;
+    width: 95%;
+    height: auto;
+    background-color: #f8f7f7;
+}
+
+.search-span {
+    border-right: none;
+    background-color: #fff;
+}
+
+.search-input {
+    border-left: none;
+}
+
+.search-input:focus {
+    box-shadow: none;
+    border: 1px solid #ced4da;
+    border-left: none;
+}
+
+.filter-button {
+    margin-top: 35px;
+}
+
+.btn-user {
+    border: 1.5px solid;
+    border-radius: 9px;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 3px;
+}
+
+.input-group-user {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #cbcaca;
+    background-color: #f8f7f7;
+}
+
+.input-group-user:focus {
+    box-shadow: none;
+    border-bottom: 1px solid #cbcaca;
+    background-color: #f8f7f7;
+}
+
+.input-group-user option {
+    font-size: 12px;
+    padding: 20px;
+}
+
+.search-span {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #cbcaca;
+    color: #6c757d;
+    background-color: #f8f7f7;
+    margin-left: 20px;
+}
+
+.form-label {
+    font-size: 12px;
+}
+
+.first-item {
+    margin-right: auto;
+    align-self: flex-start;
+    align-content: flex-start;
+}
+
+.icon {
+    color: #e2e2e2;
+    font-size: 15px;
+}
+
+.icon-sorting {
+    color: #112b3c;
+    font-size: 15px;
+}
+
+.column-icon {
+    margin-bottom: -8px;
+}
+
+.content-table {
+    overflow-y: auto;
+    height: 470px;
+}
+
+.content-table thead th {
+    background-color: #f8f7f7;
+    position: sticky;
+    top: 0;
+}
+
+.table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table th,
+.table td {
+    padding: 8px 16px;
+}
+
+.table tbody {
+    background-color: #fff;
+}
+
+.arrow-icon {
+    cursor: pointer;
+}
+
+.arrow-icon-disabled {
+    cursor: pointer;
+    color: #9e9e9e;
+}
+
+.rowPaginate {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 10px;
+}
+
+.textShow {
+    font-size: 14px;
+    letter-spacing: 0.01px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.numberPage {
+    font-size: 15px;
+}
+
+.arrowIcon {
+    font-size: 14px;
+    color: #a5a5a5;
+    cursor: pointer;
+}
+
+.prevPage {
+    text-transform: uppercase;
+}
+
+.nextPage {
+    text-transform: uppercase;
+}
+
+.pageLinkPrev {
+    color: #9e9e9e;
+}

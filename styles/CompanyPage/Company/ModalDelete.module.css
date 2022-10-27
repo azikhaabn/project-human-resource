@@ -1,0 +1,22 @@
+.modal-delete {
+  box-shadow: 0 0 0 10px #DEE3E1;
+  width: 315px;
+  height: 350px;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.titleDelete {
+  color: #9f0111;
+}
+
+.btn-delete {
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: 2px solid #7d7d7d;
+  color: #7d7d7d;
+}

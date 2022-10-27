@@ -1,0 +1,58 @@
+.main {
+  height: auto;
+}
+
+.mainContent{
+  height: 100vh;
+}
+
+.link{
+    margin-bottom: 5px;
+    margin-left: -11px;
+}
+
+.link a {
+  font-size: 18px;
+  color: gray;
+}
+
+.link a:hover {
+  border-bottom: 1px solid gray;
+  color: gray;
+}
+
+.all-cash-text {
+  margin-top: -5px;
+  margin-left: -11px;
+}
+
+.select-content{
+    margin: -11px;
+}
+
+.content p {
+    color: #a9a4a1;
+}
+
+
+.setting-btn{
+    border: 1px solid #E6E6E6;
+    background: #FBFBFB;
+    color: #858481;
+    border-radius: 3px;
+}
+
+.btn-create {
+    background-color: #005fbf;
+    color: #fff;
+}
+
+.btn-create:visited {
+    background-color: #005fbf;
+    color: #fff;
+}
+
+/* .contentTable th{
+    font-size: medium;
+    font-weight: light;
+} */

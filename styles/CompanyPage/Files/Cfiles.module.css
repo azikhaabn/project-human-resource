@@ -1,0 +1,147 @@
+.main {
+  height: auto;
+  height: 100vh;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+}
+
+/* Media Queries */
+@media (min-width: 480px) {
+  .header {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.bg-content {
+  width: 95%;
+  height: auto;
+  background-color: #f8f7f7;
+  margin: 0 auto;
+}
+
+.content h5{
+  text-align: center;
+}
+
+.btn-head {
+  display: inline-block;
+  padding: 5px 12px;
+  font-weight: 700;
+  color: #ACB3BB;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.btn-head:hover {
+  color: #000;
+}
+
+.btn-head-active {
+  color: #000;
+  display: inline-block;
+  border-bottom: 2px solid #acacac;
+}
+
+.btn-add {
+  font-size: 12px;
+  letter-spacing: 2px;
+  border-radius: 7px;
+}
+
+.input-group {
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #cbcaca;
+  background-color: #f8f7f7;
+}
+
+.input-group:focus,
+.input-group:active {
+  background-color: #f8f7f7;
+  border-bottom: 1px solid #cbcaca;
+  box-shadow: none;
+}
+
+.search-icon {
+  color: #bababc;
+}
+
+.table-thead {
+  background-color: #f8f7f7;
+}
+
+.table-tbody {
+  background-color: #fff;
+}
+
+.icon-sorting {
+  font-size: 13px;
+  margin-top: 2px;
+  color: #e3e3e3;
+}
+
+.arrow-icon {
+  cursor: pointer;
+}
+
+.arrow-icon-disabled {
+  cursor: pointer;
+  color: #9e9e9e;
+}
+.rowPaginate {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 10px;
+}
+
+.textShow {
+  font-size: 14px;
+  letter-spacing: 0.01px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.numberPage {
+  font-size: 22px;
+}
+
+.arrowIcon {
+  font-size: 14px;
+  color: #a5a5a5;
+  cursor: pointer;
+}
+
+.prevPage {
+  text-transform: uppercase;
+}
+
+.nextPage {
+  text-transform: uppercase;
+}
+
+.pageLinkPrev {
+  color: #9e9e9e;
+}
+
+.titleDelete {
+  color: #910111;
+}
+
+.modal-delete {
+  width: 350px;
+  height: 400px;
+  border: 10px solid #e1e0e0;
+  margin-left: 100px;
+}
+
+.first-item {
+  margin-right: auto;
+  align-self: flex-start;
+  align-content: flex-start;
+}

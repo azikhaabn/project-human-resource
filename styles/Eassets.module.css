@@ -1,0 +1,50 @@
+.main {
+    background-color: grey;
+    min-height: 250vh;
+    margin: 0;
+    font-family: 'Gurajada', serif;
+    height: 100%;
+}
+
+.header {
+    background-color: #112B3C;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 65px;
+    flex-direction: row;
+}
+
+.logo {
+    margin-top: 5px;
+}
+
+.headerRight {
+    float: right;
+    line-height: 26px;
+    position: absolute;
+    top: 2.7%;
+    right: 10px;
+}
+
+.icon {
+    margin: 0px 5px 0px 5px;
+}
+
+.icon2 {
+    margin: 0px 20px 0px 10px
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    margin-bottom: 5px;
+}
+
+/* Media Queries */
+@media (min-width: 480px) {
+    .header {
+        width: 100%;
+        height: auto;
+    }
+}
