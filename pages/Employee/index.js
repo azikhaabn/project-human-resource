@@ -12,8 +12,8 @@ import MOCK_DATA from "./MOCK_DATA.json";
 import { Columns } from "./columns";
 import styles from "/styles/Employee.module.css";
 import { Icon } from "@iconify/react";
-import Header from "../Component/common/header";
-import SelectSearch from "react-select-search";
+import Header from "../Component/header";
+// import SelectSearch from "react-select-search";
 import { options } from "./options";
 import regeneratorRuntime from "regenerator-runtime";
 
@@ -196,12 +196,12 @@ export default function Employee() {
                   </div>
                   <div className={styles.mSection}>
                     <label className={styles.mLabel}>Employment Status</label>
-                    <SelectSearch
+                    {/* <SelectSearch
                       options={options}
                       value="sv"
                       name="language"
                       placeholder="Choose your language"
-                    />
+                    /> */}
                   </div>
                 </div>
               </div>

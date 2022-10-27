@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../Component/common/header";
+import Header from "../Component/header";
 import styles from "/styles/addEmployee.module.css";
 import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
