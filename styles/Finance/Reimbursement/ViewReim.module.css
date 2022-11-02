@@ -1,0 +1,67 @@
+.modal {
+  width: 700px;
+  height: 500px;
+  box-shadow: 0 0 0 10px #dee3e1;
+  margin-left: -7rem;
+  overflow-y: scroll;
+}
+
+.form-label {
+  font-size: 13px;
+  margin-bottom: -5px !important;
+}
+
+.input-group {
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #c0bfbf;
+  background-color: #fff;
+  font-size: 12px;
+}
+
+.input-group:focus {
+  box-shadow: none;
+  border-bottom: 2px solid #c0bfbf;
+  background-color: #fff;
+}
+
+.input-group option {
+  font-size: 15px;
+}
+
+.list-view ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.check-input {
+  background-color: #bdbdbd;
+  border: none;
+  cursor: pointer;
+}
+
+.check-input:active, .check-input:checked {
+  box-shadow: none;
+  background-color: #bdbdbd;
+  border: none;
+}
+
+.check-radio[name="flexRadioDefault"] {
+  accent-color: #9f0111;
+  margin-left: -22px;
+}
+
+.check-radio[name="flexRadioDefault2"] {
+  accent-color: #112b3c;
+  padding: 20px;
+  margin-left: -22px;
+}
+
+.btn-box {
+  font-size: 12px;
+  letter-spacing: 3px;
+  border-radius: 7px;
+  margin: 10px 10px 0 0;
+  font-weight: bold;
+}

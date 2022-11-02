@@ -1,0 +1,26 @@
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.container ul li {
+  display: inline-block;
+  margin-right: 50px;
+  cursor: pointer;
+}
+
+.dropdown-btn button {
+  border: none;
+}
+
+.dropdown-btn ul {
+  width: 150px;
+}
+
+.dropdown-btn li {
+  padding: 7px;
+}
+
+.dropdown-btn a {
+  color: #000;
+}

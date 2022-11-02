@@ -1,0 +1,52 @@
+.modal {
+  width: 800px;
+  height: 500px;
+  box-shadow: 0 0 0 10px #dee3e1;
+  margin-left: -7rem;
+  overflow-y: scroll;
+}
+
+.input-group-tr {
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px dotted #c0bfbf;
+  background-color: #fff;
+}
+
+.input-group-tr:focus {
+  box-shadow: none;
+  border-bottom: 2px dotted #c0bfbf;
+  background-color: #fff;
+}
+
+.input-group {
+  border: none;
+  border-radius: 0;
+  border-bottom: 2px solid #c0bfbf;
+  background-color: #fff;
+  font-size: 12px;
+}
+
+.input-group:focus {
+  box-shadow: none;
+  border-bottom: 2px solid #c0bfbf;
+  background-color: #fff;
+}
+
+.table-head {
+  background-color: #eee;
+  color: #a21517;
+}
+
+.table-body select {
+  width: 120%;
+}
+
+.btn-box {
+  font-size: 10px;
+  padding: 10px;
+  letter-spacing: 3px;
+  border-radius: 7px;
+  margin: 10px 10px 0 0;
+  font-weight: bold;
+}
