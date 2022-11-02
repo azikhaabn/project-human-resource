@@ -11,7 +11,6 @@ import Formula from "./formula";
 import AddParent from "./addParent";
 
 const FinanceSettings = () => {
-  const [filter, setFilter] = useState(false);
   const router = useRouter();
   const currentRoute = router.pathname;
 
@@ -30,7 +29,7 @@ const FinanceSettings = () => {
                   <div className={`${styles["sidebar"]} col-2`}>
                     <div className="d-flex flex-column text-center">
                       <Link href="./Finance">
-                        <div className={currentRoute === "/Settings/Finance" ? `${styles["btn-tasks"]} ${styles["active"]}` : `${styles["btn-tasks"]}`}>
+                        <div className={currentRoute === "/Setting/Finance" ? `${styles["btn-tasks"]} ${styles["active"]}` : `${styles["btn-tasks"]}`}>
                           <div className={`${styles["icon-finance"]}`}>
                             <FontAwesomeIcon icon={faCoins} />
                           </div>
@@ -88,7 +87,7 @@ const FinanceSettings = () => {
 
                           <li>
                             <div className={`${styles["form-check"]} form-check`}>
-                              <input className={`${styles["check-input"]} form-check-input rounded-0`} setFilter={true} type="checkbox" value="" id="default" />
+                              <input className={`${styles["check-input"]} form-check-input rounded-0`} type="checkbox" value="" id="default" />
                               <label className={`${styles["form-label"]} form-check-label`} for="default">
                                 Default Reimbursement for new employee
                               </label>
