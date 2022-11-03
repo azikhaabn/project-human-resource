@@ -24,3 +24,23 @@
 .dropdown-btn a {
   color: #000;
 }
+
+.btn-head {
+  display: inline-block;
+  padding: 5px 12px;
+  font-weight: 700;
+  color: #acb3bb;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.btn-head:hover {
+  color: #000;
+}
+
+.btn-head-active {
+  color: #000;
+  display: inline-block;
+  border-bottom: 2px solid #acacac;
+}

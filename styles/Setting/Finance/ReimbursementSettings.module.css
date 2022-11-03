@@ -78,8 +78,16 @@
   padding: 0;
 }
 
- .radio-default li {
+.radio-default li {
   display: inline-block;
+}
+
+.list-finance li .form-label {
+  font-size: 15px;
+}
+
+.list-finance li {
+  margin: 10px 0;
 }
 
 .form-label {
@@ -114,6 +122,11 @@
     box-shadow: none;
     background-color: #9f0111;
     border: none;
+}
+
+.check-input[type="checkbox"]:not(:checked) {
+  box-shadow: none;
+  border-color: #c0bfbf;
 }
 
 .check-radio[name="expiredIn"],  

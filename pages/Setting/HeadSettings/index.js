@@ -52,34 +52,36 @@ export default function Settings() {
         </li>
 
         <li>
-          <div className={`${styles["dropdown-btn"]} dropdown`}>
-            <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-              Finance
-            </button>
-            <ul class="dropdown-menu">
-              <li>
-                <Link href="#">
-                  <a class="dropdown-item" href="#">
-                    Reimbursement
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link href="#">
-                  <a class="dropdown-item" href="#">
-                    Cash Advance
-                  </a>
-                </Link>
-              </li>
-              <li>
-                <Link href="#">
-                  <a class="dropdown-item" href="#">
-                    Loan
-                  </a>
-                </Link>
-              </li>
-            </ul>
-          </div>
+          <Link href="#">
+            <div className={`${styles["dropdown-btn"]} dropdown`}>
+              <button class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                Finance
+              </button>
+              <ul class="dropdown-menu">
+                <li>
+                  <Link href="#">
+                    <a class="dropdown-item" href="#">
+                      Reimbursement
+                    </a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#">
+                    <a class="dropdown-item" href="#">
+                      Cash Advance
+                    </a>
+                  </Link>
+                </li>
+                <li>
+                  <Link href="#">
+                    <a class="dropdown-item" href="#">
+                      Loan
+                    </a>
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </Link>
         </li>
 
         <li>
