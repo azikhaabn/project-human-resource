@@ -5,6 +5,7 @@ import Formula from "../formula";
 
 export const Emerge = () => {
   const [reimLimit, setReimLimit] = useState("Amount");
+  const [optionMonth, setOptionMonth] = useState("january");
   // const [taxable, setTaxable] = useState("Yes");
 
   const onChangeValue = (event) => {
@@ -15,7 +16,7 @@ export const Emerge = () => {
     <div>
       <section className={`${styles["expiry-date"]}`}>
         <h5>Emerge</h5>
-        <ul>
+        <ul onChange={onChangeValue}>
           <li className={`d-flex justify-content-start`}>
             <div>
               <div className={`${styles["form-check"]} form-check`}>
@@ -47,7 +48,13 @@ export const Emerge = () => {
                   Month Emerge Annually
                 </label>
                 <div className={`input-group`}>
-                  <select className={`${styles["input-group"]} form-select`}>
+                  <select
+                    className={`${styles["input-group"]} form-select`}
+                    onChange={(e) => {
+                      const selectedMonth = e.target.value;
+                      setOptionMonth(selectedMonth);
+                    }}
+                  >
                     <option selected="true">January</option>
                     <option value="february">February</option>
                     <option value="march">March</option>
@@ -121,7 +128,7 @@ export const Emerge = () => {
             </div>
           </li>
 
-          <li>
+          <li className="d-flex justify-content-start">
             <div>
               <div className={`${styles["form-check"]} form-check`}>
                 <input className={`${styles["check-radio"]}`} type="radio" name="emerge" id="month" />
@@ -130,12 +137,40 @@ export const Emerge = () => {
                 </label>
               </div>
             </div>
+
+            <div class="ms-3">
+              <h5 style={{ fontSize: "15px" }}>Emerge Day</h5>
+              <ul onChange={onChangeValue}>
+                <li>
+                  <ul className="d-flex justify-content-start">
+                    <li>
+                      <RadioButton id="formula" children="Aniversary" value="Formula" checked={reimLimit === "Formula"} />
+                    </li>
+                  </ul>
+                </li>
+
+                <li className="mb-2">
+                  <ul className="d-flex justify-content-start">
+                    <li>
+                      <RadioButton id="amount" children="Custom" value="Amount" checked={reimLimit === "Amount"} />
+                    </li>
+                    <li>
+                      <div className={`col-10 ms-3`}>
+                        <div className={`input-group mb-3 mt-3`}>
+                          <input type="text" id="reimName" className={`${styles["input-group"]} form-control`} style={{ marginTop: "-20px" }} placeholder="Day(s)"></input>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
           </li>
         </ul>
       </section>
 
       {/* MODAL FORMULA NO EXPIRY DATE */}
-      <div class="modal fade" id="viewFormula" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal fade" id="viewFormula" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
           <Formula />
         </div>

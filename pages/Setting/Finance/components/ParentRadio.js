@@ -36,7 +36,7 @@ const ParentRadio = () => {
       </ul>
 
       {/* MODAL VIEW FILTER DEFAULT REIMBURSEMENT FOR NEW EMPLOYEE */}
-          <div class="modal fade" id="viewFilter" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal fade" id="viewFilter" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
               <ViewFilter />
             </div>

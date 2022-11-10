@@ -1,7 +1,11 @@
 import React from "react";
+import { useState } from "react";
 import styles from "/styles/Setting/Finance/ReimbursementSettings.module.css";
 
 export const NoExpiryDate = () => {
+  const [minExpiry, setMinExpiry] = useState(false);
+  const [optionMonth, setOptionMonth] = useState("january");
+
   return (
     <div>
       <h5 style={{ fontSize: "15px", marginLeft: "-20px" }}>Expired In</h5>
@@ -17,7 +21,15 @@ export const NoExpiryDate = () => {
 
       <div className={`d-flex justify-content-start ms-1`}>
         <div className={`d-flex justify-content-start`} style={{ marginLeft: "24px" }}>
-          <input className={`${styles["check-radio"]}`} type="radio" name="expiredIn" style={{ marginBottom: "20px" }} />
+          <input
+            className={`${styles["check-radio"]}`}
+            type="radio"
+            name="expiredIn"
+            style={{ marginBottom: "20px" }}
+            onClick={() => {
+              setMinExpiry(!minExpiry);
+            }}
+          />
           <div className={`col-12 me-1 ms-2`}>
             <div className={`mb-3`}>
               <label for="day" className={`${styles["form-label"]} form-label`}>
@@ -34,13 +46,20 @@ export const NoExpiryDate = () => {
             </div>
           </div>
         </div>
+
         <div className={`col-5 ms-4`}>
           <div className={`mb-3`}>
             <label for="month" className={`${styles["form-label"]} form-label`}>
               Month
             </label>
             <div className={`input-group mb-3`}>
-              <select className={`${styles["input-group"]} form-select`}>
+              <select
+                className={`${styles["input-group"]} form-select`}
+                onChange={(e) => {
+                  const selectedMonth = e.target.value;
+                  setOptionMonth(selectedMonth);
+                }}
+              >
                 <option selected="true">January</option>
                 <option value="february">February</option>
                 <option value="march">March</option>
@@ -59,6 +78,7 @@ export const NoExpiryDate = () => {
         </div>
       </div>
 
+      {/* {minExpiry ? ( */}
       <div className={`d-flex justify-content-start ms-3`}>
         <h5 class="ms-5" style={{ fontSize: "15px", marginTop: "27px" }}>
           Minimum expiry
@@ -74,6 +94,9 @@ export const NoExpiryDate = () => {
           </div>
         </div>
       </div>
+      {/* ) : (
+        <></>
+      )} */}
     </div>
   );
 };

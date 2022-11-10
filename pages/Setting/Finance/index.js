@@ -15,6 +15,9 @@ import { NoExpiryDate } from "./components/NoExpiryDate";
 const FinanceSettings = () => {
   const [showParentRadio, setShowParentRadio] = useState(false);
   const [showTaxable, setShowTaxable] = useState(false);
+  const [hideNoExpiryDate, setHideNoExpiryDate] = useState(true);
+  const [firstYearFlag, setFirstYearFlag] = useState(false);
+
   const router = useRouter();
   const currentRoute = router.pathname;
 
@@ -143,7 +146,15 @@ const FinanceSettings = () => {
 
                           <li>
                             <div className={`${styles["form-check"]} form-check`}>
-                              <input className={`${styles["check-input"]} form-check-input rounded-0`} type="checkbox" value="" id="protate" />
+                              <input
+                                className={`${styles["check-input"]} form-check-input rounded-0`}
+                                type="checkbox"
+                                value=""
+                                id="protate"
+                                // onClick={() => {
+                                //   setShowTaxable(!showTaxable);
+                                // }}
+                              />
                               <label className={`${styles["form-label"]} form-check-label`} for="protate">
                                 Prorate on First Year
                               </label>
@@ -152,7 +163,15 @@ const FinanceSettings = () => {
 
                           <li>
                             <div className={`${styles["form-check"]} form-check`}>
-                              <input className={`${styles["check-input"]} form-check-input rounded-0`} type="checkbox" value="" id="noExpiryDate" />
+                              <input
+                                className={`${styles["check-input"]} form-check-input rounded-0`}
+                                type="checkbox"
+                                value=""
+                                id="noExpiryDate"
+                                onClick={() => {
+                                  setHideNoExpiryDate(!hideNoExpiryDate);
+                                }}
+                              />
                               <label className={`${styles["form-label"]} form-check-label`} for="noExpiryDate">
                                 No Expiry Date
                               </label>
@@ -167,15 +186,80 @@ const FinanceSettings = () => {
                               </label>
                             </div>
                           </li>
+
+                          <li>
+                            <div className={`${styles["form-check"]} form-check`}>
+                              <input
+                                className={`${styles["check-input"]} form-check-input rounded-0`}
+                                type="checkbox"
+                                value=""
+                                id="maxRequest"
+                                onClick={() => {
+                                  setFirstYearFlag(!firstYearFlag);
+                                }}
+                              />
+                              <label className={`${styles["form-label"]} form-check-label`} for="maxRequest">
+                                First Year Flag
+                              </label>
+                            </div>
+
+                            {firstYearFlag ? (
+                              <ul>
+                                <li>
+                                  <div className={`${styles["form-check"]} form-check`}>
+                                    <input className={`${styles["check-input"]} form-check-input rounded-0`} type="checkbox" value="" id="maxRequest" />
+                                    <label className={`${styles["form-label"]} form-check-label`} for="maxRequest">
+                                      Effective From Join Date
+                                    </label>
+                                  </div>
+                                </li>
+                                <div style={{ marginLeft: "-20px" }}>
+                                  <li className="d-flex justify-content-start">
+                                    <div className={`${styles["form-check"]} form-check`}>
+                                      <input className={`${styles["check-radio"]}`} type="radio" name="emerge" id="month" />
+                                      <label className={`${styles["form-label"]} form-check-label ms-2`} for="month">
+                                        Emerge After
+                                      </label>
+                                    </div>
+
+                                    <div className={`col-6 ms-3`}>
+                                      <label for="reimName" className={`${styles["form-label"]} form-label`}>
+                                        Month(s)
+                                      </label>
+                                      <div className={`input-group mb-3`}>
+                                        <input type="text" id="reimName" className={`${styles["input-group"]} form-control`}></input>
+                                      </div>
+                                    </div>
+                                  </li>
+                                  <li>
+                                    <div className={`${styles["form-check"]} form-check`}>
+                                      <input className={`${styles["check-radio"]}`} type="radio" name="emerge" id="month" />
+                                      <label className={`${styles["form-label"]} form-check-label ms-2`} for="month">
+                                        First Emerge Status
+                                      </label>
+                                    </div>
+
+                                    <div>
+                                      <select className={`${styles["select-emerge"]} form-select`} multiple aria-label="multiple select example" style={{ marginLeft: "20px" }}>
+                                        <option value="1">One</option>
+                                        <option value="2">Two</option>
+                                        <option value="3">Three</option>
+                                      </select>
+                                    </div>
+                                  </li>
+                                </div>
+                              </ul>
+                            ) : (
+                              <></>
+                            )}
+                          </li>
                         </ul>
 
-                        <div>
-                          <NoExpiryDate />
-                        </div>
+                        <div style={{ marginRight: "100px" }}>{hideNoExpiryDate ? <NoExpiryDate /> : <></>}</div>
                       </section>
 
-                      {/* EXPIRY DATE */}
-                      <div className="mt-3">
+                      <div>
+                        {/* EXPIRY DATE */}
                         <Emerge />
                       </div>
 
@@ -183,15 +267,12 @@ const FinanceSettings = () => {
                       <div>
                         <TablePolicy />
                       </div>
-                      
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-
-
         </main>
       </main>
     </div>

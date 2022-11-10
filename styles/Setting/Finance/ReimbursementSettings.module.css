@@ -84,10 +84,11 @@
 
 .list-finance li .form-label {
   font-size: 15px;
+  margin-left: 10px;
 }
 
 .list-finance li {
-  margin: 10px 0;
+  margin-bottom: 20px;
 }
 
 .form-label {
@@ -113,8 +114,14 @@
     font-size: 15px;
 }
 
+/* .input-group option:hover {
+    background-color: #910111;
+} */
+
 .check-input {
     cursor: pointer;
+    width: 20px;
+    height: 20px;
 }
 
 .check-input:active,
@@ -154,4 +161,8 @@
 
 .modal {
   z-index: 1;
+}
+
+.select-emerge option:hover {
+  background-color: #cecece;
 }
