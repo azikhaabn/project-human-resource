@@ -1,6 +1,7 @@
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "/styles/Component/Navbar.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faEnvelope, faUser } from "@fortawesome/free-solid-svg-icons";
@@ -27,10 +28,44 @@ export default function Navbar() {
               <Image className={styles.imageLogo} src="/EasyHandler_Hitam.png" alt="logo" width={42} height={42} />
             </li>
             <li className={styles.navItem}>
-              <FontAwesomeIcon className={`${styles.navIcon}`} icon={faEnvelope} />
+              <button type="button" className= {`${styles["user-navbar"]} btn position-relative`}>
+                <FontAwesomeIcon className={`${styles.navIcon}`} icon={faEnvelope} />
+                <span className={`${styles["message"]} translate-middle badge`}>
+                  99+
+                  <span class="visually-hidden">unread messages</span>
+                </span>
+              </button>
+
+              {/* <button type="button" class="btn btn-primary position-relative"> */}
+              {/* <FontAwesomeIcon className={`${styles.navIcon}`} icon={faEnvelope} /> */}
+              {/* <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger" />
+                99+
+                <span class="visually-hidden">unread messages</span>
+              </button> */}
             </li>
             <li className={styles.navItem}>
-              <FontAwesomeIcon className={`${styles.navIcon}`} icon={faUser} />
+              <div class="dropdown">
+                <button className={`${styles["user-navbar"]} dropdown-toggle`} type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  <FontAwesomeIcon className={`${styles.navIcon}`} icon={faUser} />
+                </button>
+                <ul class="dropdown-menu">
+                  <li>
+                    <Link href="#">
+                      <a class="dropdown-item">Settings</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Another action
+                    </a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#">
+                      Something else here
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </li>
           </ul>
         </nav>

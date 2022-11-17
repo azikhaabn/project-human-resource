@@ -6,7 +6,7 @@ import Pagination from "../../../Component/pagination";
 import ShowingSearch from "../../../Component/showingSearch";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCaretUp, faCaretDown, faXmark, faCircleInfo, faPencil } from "@fortawesome/free-solid-svg-icons";
-import { faCircleUser } from "@fortawesome/free-regular-svg-icons";
+// import { faCircleUser } from "@fortawesome/free-regular-svg-icons";
 import NewRequest from "./newRequest";
 
 export default function Request() {
@@ -79,7 +79,7 @@ export default function Request() {
                 <div>
                   <Link href="Assign/NewBtn">
                     <a type="button" className={`${styles["btn-box"]} btn btn-sm btn-outline-secondary`} data-bs-toggle="modal" data-bs-target="#exampleModal">
-                      CREATE REIMBURSEMENT REQUEST
+                      <span>CREATE REIMBURSEMENT REQUEST</span>
                     </a>
                   </Link>
                 </div>

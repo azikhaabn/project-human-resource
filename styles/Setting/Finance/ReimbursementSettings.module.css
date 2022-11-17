@@ -82,7 +82,7 @@
   display: inline-block;
 }
 
-.list-finance li .form-label {
+.list-finance li .form-label, .form-label-flag {
   font-size: 15px;
   margin-left: 10px;
 }
@@ -161,6 +161,14 @@
 
 .modal {
   z-index: 1;
+}
+
+.select-emerge {
+  width: 250px;
+}
+
+.select-emerge option {
+  font-size: 15px;
 }
 
 .select-emerge option:hover {

@@ -1,6 +1,10 @@
 .navbar {
     background-color: #112b3c;
     height: 70px;
+    /* position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1; */
 }
 
 .navList {
@@ -27,7 +31,27 @@
     margin-left: -2rem;
 }
 
+.navItem:nth-child(3) {
+    margin-right: -10px;
+}
 
+.user-navbar {
+    background-color: #112b3c;
+    border: none;
+    color: #fff;
+}
+
+.navIcon, .user-navbar {
+    font-size: 26px;
+}
+
+.message {
+    position: absolute;
+    font-size: 10px;
+    top: 0;
+    left: 10%;
+    background-color: #E33035;
+}
 
 /* .navItem:nth-child(3) {
     margin-left: -20px;

@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.container ul li {
+ .container ul li {
   display: inline-block;
   margin-right: 50px;
   cursor: pointer;
@@ -19,6 +19,10 @@
 
 .dropdown-btn li {
   padding: 7px;
+}
+
+.dropdown-btn li:hover {
+  width: 100%;
 }
 
 .dropdown-btn a {

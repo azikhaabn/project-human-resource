@@ -42,8 +42,9 @@ export default function Reimbursement() {
                   <button type="button" className={`${styles["btn-box"]} btn btn-sm btn-outline-secondary`}>
                     EXPORT
                   </button>
-                  <button type="button" className={`${styles["btn-box"]} btn btn-sm btn-outline-secondary`}>
-                    IMPORT
+                  <button type="button" className={`${styles["btn-import"]} btn btn-sm btn-outline-secondary`}>
+                    <span>IMPORT</span>
+                    <input type="file" />
                   </button>
                 </div>
               </div>
@@ -51,9 +52,11 @@ export default function Reimbursement() {
               <div className={`${styles["second-box-content"]} d-flex justify-content-between`}>
                 <div>
                   <h5>CREATE OR VIEW SETTING REIMBURSEMENT</h5>
-                  <button type="button" className={`${styles["btn-box"]} btn btn-sm btn-outline-secondary`}>
-                    NEW
-                  </button>
+                  <Link href="../Setting/Finance">
+                    <a type="button" className={`${styles["btn-box"]} btn btn-sm btn-outline-secondary`}>
+                      NEW
+                    </a>
+                  </Link>
                   <Link href="Reimbursement/ViewSetting">
                     <a type="button" className={`${styles["btn-box"]} btn btn-sm btn-outline-secondary`}>
                       VIEW SETTING
@@ -209,7 +212,6 @@ export default function Reimbursement() {
             <ReimbursementSimulation />
           </div>
         </div>
-
 
         {/* MODAL VIEW REiMBURSEMENT */}
         <div class="modal fade" id="viewReim" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

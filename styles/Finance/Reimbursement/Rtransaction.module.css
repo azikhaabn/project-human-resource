@@ -80,3 +80,7 @@
 .modal-list li {
   display: inline-block;
 }
+
+.modal-list a {
+  cursor: pointer;
+}

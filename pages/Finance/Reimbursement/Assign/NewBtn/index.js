@@ -66,25 +66,26 @@ export default function NewBtn() {
                 <ul>
                   <li>
                     <button type="button" className={`${styles["btn-box"]}`} data-bs-toggle="modal" data-bs-target="#addBtnNew">
-                      <FontAwesomeIcon icon={faScrewdriver} />
+                      <FontAwesomeIcon icon={faScrewdriver} /> &nbsp;
                       <span>ADD</span>
                     </button>
                   </li>
                   <li>
-                    <button type="button" className={`${styles["btn-box"]}`}>
-                      <FontAwesomeIcon icon={faArrowRightArrowLeft} />
+                    <button type="button" className={`${styles["btn-import"]}`}>
+                      <FontAwesomeIcon icon={faArrowRightArrowLeft} /> &nbsp;
                       <span>IMPORT</span>
+                      <input type="file" />
                     </button>
                   </li>
                   <li>
                     <button type="button" className={`${styles["btn-box"]}`}>
-                      <FontAwesomeIcon icon={faArrowUpFromBracket} />
+                      <FontAwesomeIcon icon={faArrowUpFromBracket} /> &nbsp;
                       <span>EXPORT</span>
                     </button>
                   </li>
                   <li>
                     <button type="button" className={`${styles["btn-box"]}`} data-bs-toggle="modal" data-bs-target="#deleteBtn">
-                      <FontAwesomeIcon icon={faTrash} />
+                      <FontAwesomeIcon icon={faTrash} /> &nbsp;
                       <span>DELETE</span>
                     </button>
                   </li>

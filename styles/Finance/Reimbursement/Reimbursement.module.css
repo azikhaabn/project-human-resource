@@ -1,6 +1,6 @@
 .main {
   height: 100vh;
-  background-color: #f8f7f7
+  background-color: #f8f7f7;
 }
 
 .content {
@@ -26,13 +26,25 @@
   margin: 50px 80px;
 }
 
-.btn-box {
+.btn-box, .btn-import {
   font-size: 10px;
   padding: 10px;
   letter-spacing: 3px;
   border-radius: 7px;
   margin: 10px 10px 0 0;
   font-weight: bold;
+  overflow: hidden;
+}
+
+.btn-import span {
+  position: absolute;
+  font-size: 10px;
+}
+
+.btn-import input[type="file"] {
+  cursor: pointer;
+  font-size: 3px;
+  opacity: 0;
 }
 
 .btn {

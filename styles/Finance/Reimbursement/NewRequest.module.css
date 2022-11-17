@@ -42,11 +42,23 @@
   width: 120%;
 }
 
-.btn-box {
+.btn-box, .btn-import {
   font-size: 10px;
   padding: 10px;
   letter-spacing: 3px;
   border-radius: 7px;
   margin: 10px 10px 0 0;
   font-weight: bold;
+}
+
+.btn-import span {
+  position: absolute;
+}
+
+.btn-import input[type="file"] {
+  cursor: pointer;
+  font-size: 5px;
+  transform: scale(1);
+  /* position: absolute; */
+  opacity: 0;
 }

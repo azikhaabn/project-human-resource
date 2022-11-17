@@ -1,7 +1,6 @@
 .main {
   height: 100vh;
-  background-color: #f8f7f7
-  
+  background-color: #f8f7f7;
 }
 
 .content {
@@ -83,7 +82,8 @@
   margin-left: 10px;
 }
 
-.btn-box {
+.btn-box,
+.btn-import {
   background-color: #eee;
   font-size: 10px;
   padding: 10px;
@@ -92,13 +92,24 @@
   border: none;
 }
 
-.btn-box:hover {
+.btn-box:hover,
+.btn-import:hover {
   background-color: #6c757d;
   color: #fff;
 }
 
-.btn-box span {
-  margin-left: 5px;
+.btn-import span {
+  position: absolute;
+  font-size: 10px;
+}
+
+.btn-import input[type="file"] {
+  cursor: pointer;
+  margin-left: -30px;
+  font-size: 5px;
+  transform: scale(1);
+  /* position: absolute; */
+  opacity: 0;
 }
 
 .icon-sorting {

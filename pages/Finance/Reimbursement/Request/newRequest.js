@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "/styles/Finance/Reimbursement/NewRequest.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faXmark } from "@fortawesome/free-solid-svg-icons";
 
 const NewRequest = () => {
+  const [showBodyTable, setShowBodyTable] = useState(false);
+
   return (
     <div className={styles.container}>
       <div className={`${styles.modal} modal-content rounded-0`}>
@@ -28,8 +30,9 @@ const NewRequest = () => {
                   <input type="file" id="startDate" className={`btn form-control mt-4`}></input>
                 </div>
               </div> */}
-              <button type="button" className={`${styles["btn-box"]} btn btn-sm btn-outline-secondary`}>
-                ATTACH FILE
+              <button type="button" className={`${styles["btn-import"]} btn btn-sm btn-outline-secondary`}>
+                <span>ATTACH FILE</span>
+                <input type="file" />
               </button>
             </div>
           </div>
@@ -43,7 +46,7 @@ const NewRequest = () => {
               </div>
             </div>
             <div className={`col-6`}>
-              <label for="select" className={`${styles["form-label"]} form-label`}>
+              <label for="description" className={`${styles["form-label"]} form-label`}>
                 Description
               </label>
               <div className={`input-group mb-3`}>
@@ -52,11 +55,11 @@ const NewRequest = () => {
             </div>
           </div>
           <div className={`col-5 mt-3`}>
-            <label for="select" className={`${styles["form-label"]} form-label`}>
-              Type
+            <label for="reimbursementName" className={`${styles["form-label"]} form-label`}>
+              Reimbursement Name
             </label>
-            <select className={`${styles["input-group"]} form-select`} id="select">
-              <option selected>--Choose--</option>
+            <select className={`${styles["input-group"]} form-select`} id="reimbursementName">
+              <option selected>--Select Reimbursement Name--</option>
               <option value="Assign">Medical Claim</option>
               <option value="update">Trasportasi</option>
             </select>
@@ -64,11 +67,11 @@ const NewRequest = () => {
 
           <div class="border-bottom my-5">
             <div class="col-5">
-              <label for="startDate" className={`${styles["form-label"]} form-label`}>
+              <label for="employee" className={`${styles["form-label"]} form-label`}>
                 Employee
               </label>
               <div className={`input-group mb-3`}>
-                <input type="text" id="startDate" className={`${styles["input-group"]} form-control`}></input>
+                <input type="text" id="employee" className={`${styles["input-group"]} form-control`}></input>
               </div>
             </div>
           </div>
@@ -86,13 +89,15 @@ const NewRequest = () => {
                   <th scope="col">Action</th>
                 </tr>
               </thead>
-              <tbody className={`${styles["table-body"]}`}>
+              {showBodyTable ? (
+                <tbody className={`${styles["table-body"]}`}>
                 <tr>
                   <td>1</td>
                   <td>
                     <div className={`col-15`}>
                       <select className={`${styles["input-group"]} form-select`} id="select">
-                        <option selected>Rawat Jalan</option>
+                        <option selected>--Select Benefit--</option>
+                        <option value="rawatJalan">Rawat Jalan</option>
                       </select>
                     </div>
                   </td>
@@ -117,13 +122,29 @@ const NewRequest = () => {
                       </div>
                     </div>
                   </td>
-                  <td><FontAwesomeIcon icon={faXmark} style={{ color: "#a21517" }} /></td>
+                  <td>
+                <div
+                  style={{ cursor: "pointer" }}  
+                  onClick={() => {
+                    setShowBodyTable(false);
+                  }}
+                >
+                  <FontAwesomeIcon icon={faXmark} style={{ color: "#9f0111" }} />
+                </div>
+              </td>
                 </tr>
               </tbody>
+              ) : null}
             </table>
 
             <div>
-              <button type="button" className={`${styles["btn-box"]} btn btn-sm btn-outline-secondary`}>
+              <button
+                type="button"
+                className={`${styles["btn-box"]} btn btn-sm btn-outline-secondary`}
+                onClick={() => {
+                  setShowBodyTable(!showBodyTable);
+                }}
+              >
                 ADD BENEFIT
               </button>
             </div>

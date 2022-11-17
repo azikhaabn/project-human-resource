@@ -186,73 +186,6 @@ const FinanceSettings = () => {
                               </label>
                             </div>
                           </li>
-
-                          <li>
-                            <div className={`${styles["form-check"]} form-check`}>
-                              <input
-                                className={`${styles["check-input"]} form-check-input rounded-0`}
-                                type="checkbox"
-                                value=""
-                                id="maxRequest"
-                                onClick={() => {
-                                  setFirstYearFlag(!firstYearFlag);
-                                }}
-                              />
-                              <label className={`${styles["form-label"]} form-check-label`} for="maxRequest">
-                                First Year Flag
-                              </label>
-                            </div>
-
-                            {firstYearFlag ? (
-                              <ul>
-                                <li>
-                                  <div className={`${styles["form-check"]} form-check`}>
-                                    <input className={`${styles["check-input"]} form-check-input rounded-0`} type="checkbox" value="" id="maxRequest" />
-                                    <label className={`${styles["form-label"]} form-check-label`} for="maxRequest">
-                                      Effective From Join Date
-                                    </label>
-                                  </div>
-                                </li>
-                                <div style={{ marginLeft: "-20px" }}>
-                                  <li className="d-flex justify-content-start">
-                                    <div className={`${styles["form-check"]} form-check`}>
-                                      <input className={`${styles["check-radio"]}`} type="radio" name="emerge" id="month" />
-                                      <label className={`${styles["form-label"]} form-check-label ms-2`} for="month">
-                                        Emerge After
-                                      </label>
-                                    </div>
-
-                                    <div className={`col-6 ms-3`}>
-                                      <label for="reimName" className={`${styles["form-label"]} form-label`}>
-                                        Month(s)
-                                      </label>
-                                      <div className={`input-group mb-3`}>
-                                        <input type="text" id="reimName" className={`${styles["input-group"]} form-control`}></input>
-                                      </div>
-                                    </div>
-                                  </li>
-                                  <li>
-                                    <div className={`${styles["form-check"]} form-check`}>
-                                      <input className={`${styles["check-radio"]}`} type="radio" name="emerge" id="month" />
-                                      <label className={`${styles["form-label"]} form-check-label ms-2`} for="month">
-                                        First Emerge Status
-                                      </label>
-                                    </div>
-
-                                    <div>
-                                      <select className={`${styles["select-emerge"]} form-select`} multiple aria-label="multiple select example" style={{ marginLeft: "20px" }}>
-                                        <option value="1">One</option>
-                                        <option value="2">Two</option>
-                                        <option value="3">Three</option>
-                                      </select>
-                                    </div>
-                                  </li>
-                                </div>
-                              </ul>
-                            ) : (
-                              <></>
-                            )}
-                          </li>
                         </ul>
 
                         <div style={{ marginRight: "100px" }}>{hideNoExpiryDate ? <NoExpiryDate /> : <></>}</div>
@@ -261,6 +194,74 @@ const FinanceSettings = () => {
                       <div>
                         {/* EXPIRY DATE */}
                         <Emerge />
+                      </div>
+
+                      {/* FIRST YEAR FLAG */}
+                      <div className={`${styles["list-finance"]} first-year-flag mt-3`}>
+                        <div className={`${styles["form-check"]} form-check`}>
+                          <input
+                            className={`${styles["check-input"]} form-check-input rounded-0`}
+                            type="checkbox"
+                            value=""
+                            id="firstYearFlag"
+                            onClick={() => {
+                              setFirstYearFlag(!firstYearFlag);
+                            }}
+                          />
+                          <label className={`${styles["form-label-flag"]} form-check-label`} for="firstYearFlag">
+                            First Year Flag
+                          </label>
+                        </div>
+
+                        {firstYearFlag ? (
+                          <ul>
+                            <li className="mt-3">
+                              <div className={`${styles["form-check"]} form-check`}>
+                                <input className={`${styles["check-input"]} form-check-input rounded-0`} type="checkbox" value="" id="maxRequest" />
+                                <label className={`${styles["form-label"]} form-check-label`} for="maxRequest">
+                                  Effective From Join Date
+                                </label>
+                              </div>
+                            </li>
+                            <div style={{ marginLeft: "-20px" }}>
+                              <li className="d-flex justify-content-start">
+                                <div className={`${styles["form-check"]} form-check`}>
+                                  <input className={`${styles["check-radio"]}`} type="radio" name="emerge" id="month" />
+                                  <label className={`${styles["form-label"]} form-check-label ms-2`} for="month">
+                                    Emerge After
+                                  </label>
+                                </div>
+
+                                <div className={`col-2`} style={{ marginLeft: "30px" }}>
+                                  <label for="months" style={{ fontSize: "13px" }}>
+                                    Month(s)
+                                  </label>
+                                  <div className={`input-group mb-3`}>
+                                    <input type="text" id="months" className={`${styles["input-group"]} form-control`}></input>
+                                  </div>
+                                </div>
+                              </li>
+                              <li style={{ marginTop: "-30px" }}>
+                                <div className={`${styles["form-check"]} form-check`}>
+                                  <input className={`${styles["check-radio"]}`} type="radio" name="emerge" id="month" />
+                                  <label className={`${styles["form-label"]} form-check-label ms-2`} for="month">
+                                    First Emerge Status
+                                  </label>
+                                </div>
+
+                                <div>
+                                  <select className={`${styles["select-emerge"]} form-select`} multiple aria-label="multiple select example" style={{ marginLeft: "20px" }}>
+                                    <option value="permanent">Permanent</option>
+                                    <option value="contract">Contract</option>
+                                    <option value="Probation">Probation</option>
+                                  </select>
+                                </div>
+                              </li>
+                            </div>
+                          </ul>
+                        ) : (
+                          <></>
+                        )}
                       </div>
 
                       {/* TABEL SETTINGS */}

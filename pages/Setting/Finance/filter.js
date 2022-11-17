@@ -31,7 +31,7 @@ const ViewFilter = () => {
                 </div>
               </div>
             </div>
-            <div className={`${styles.container} col-3 border`}>
+            <div className={`${styles.container} col-3 border`} style={{ overflowY: "scroll" }}>
               <div className={`${styles.square}`}>
                 <div className={`${styles.header}`}>
                   <h5>Job Position</h5>
@@ -44,7 +44,7 @@ const ViewFilter = () => {
                 </div>
               </div>
             </div>
-            <div className={`${styles.container} col-3 border`}>
+            <div className={`${styles.container} col-3 border`} style={{ overflowY: "scroll" }}>
               <div className={`${styles.square}`}>
                 <div className={`${styles.header}`}>
                   <h5>Job Level</h5>
@@ -57,7 +57,7 @@ const ViewFilter = () => {
                 </div>
               </div>
             </div>
-            <div className={`${styles.container} col-3 border`}>
+            <div className={`${styles.container} col-3 border`} style={{ overflowY: "scroll" }}>
               <div className={`${styles.square}`}>
                 <div className={`${styles.header}`}>
                   <h5>Branch</h5>

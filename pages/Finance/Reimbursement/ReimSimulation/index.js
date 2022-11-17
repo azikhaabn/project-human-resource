@@ -13,9 +13,7 @@ const ReimbursementSimulation = () => {
         <div className={`${styles["modal-body"]} modal-body ms-3`}>
           <div>
             <div className={`mb-3`}>
-              <label className={`${styles["form-label"]} form-label`}>
-                Employee
-              </label>
+              <label className={`${styles["form-label"]} form-label`}>Employee</label>
               <div className={`input-group mb-3`}>
                 <select className={`${styles["input-group"]} form-select`} aria-label="Default select example">
                   <option selected>--Select Employee--</option>
@@ -34,9 +32,7 @@ const ReimbursementSimulation = () => {
               </div>
             </div>
             <div>
-              <label className={`${styles["form-label"]} form-label`}>
-                Policy
-              </label>
+              <label className={`${styles["form-label"]} form-label`}>Policy</label>
               <div className={`input-group mb-3`}>
                 <select className={`${styles["input-group"]} form-select`} aria-label="Default select example">
                   <option selected>--Chosee--</option>
@@ -44,6 +40,11 @@ const ReimbursementSimulation = () => {
                   <option value="transportasi">Transportasi</option>
                 </select>
               </div>
+            </div>
+            <div>
+              <button type="button" className={`${styles["btn-box"]} btn btn-outline-secondary me-1 btn-sm position-absolute top-70 start-50 translate-middle`} >
+                SIMULATE
+              </button>
             </div>
           </div>
         </div>

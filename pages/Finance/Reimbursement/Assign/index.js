@@ -5,8 +5,8 @@ import Navbar from "../../../Component/navbar";
 import Pagination from "../../../Component/pagination";
 import ShowingSearch from "../../../Component/showingSearch";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretUp, faCaretDown, faXmark } from "@fortawesome/free-solid-svg-icons";
-import { faCircleUser, faPenToSquare } from "@fortawesome/free-regular-svg-icons";
+import { faCaretUp, faCaretDown, faXmark, faPenToSquare } from "@fortawesome/free-solid-svg-icons";
+// import { faCircleUser, faPenToSquare } from "@fortawesome/free-regular-svg-icons";
 
 export default function ReimbursementTransaction() {
   return (
@@ -103,9 +103,11 @@ export default function ReimbursementTransaction() {
                     <td className={`${styles["modal-list"]}`}>
                       <ul>
                         <li>
-                          <a>
-                            <FontAwesomeIcon icon={faPenToSquare} style={{ color: "#A21517", marginRight: 10 }} />
-                          </a>
+                          <Link href="Assign/NewBtn">
+                            <a>
+                              <FontAwesomeIcon icon={faPenToSquare} style={{ color: "#A21517", marginRight: 10 }} />
+                            </a>
+                          </Link>
                         </li>
                         <li>
                           <a>
@@ -124,9 +126,11 @@ export default function ReimbursementTransaction() {
                     <td className={`${styles["modal-list"]}`}>
                       <ul>
                         <li>
-                          <a>
-                            <FontAwesomeIcon icon={faPenToSquare} style={{ color: "#A21517", marginRight: 10 }} />
-                          </a>
+                          <Link href="Assign/NewBtn">
+                            <a>
+                              <FontAwesomeIcon icon={faPenToSquare} style={{ color: "#A21517", marginRight: 10 }} />
+                            </a>
+                          </Link>
                         </li>
                         <li>
                           <a>
