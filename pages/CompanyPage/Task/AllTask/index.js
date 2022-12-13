@@ -4,9 +4,10 @@ import Link from "next/link";
 import styles from "/styles/CompanyPage/Task/AllTask.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-	faMagnifyingGlass
+	faFileLines,
+	faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
-import { faFileLines } from "@fortawesome/free-regular-svg-icons";
+// import { faFileLines } from "@fortawesome/free-regular-svg-icons";
 import { useRouter } from "next/router";
 import Navbar from "../../../Component/navbar";
 import CreateNew from './create';

@@ -99,6 +99,7 @@ const FinanceSettings = () => {
                                   className={`${styles["check-input"]} form-check-input rounded-0`}
                                   type="checkbox"
                                   value=""
+                                  name="defaultReim"
                                   id="default"
                                   onClick={() => {
                                     setShowParentRadio(!showParentRadio);

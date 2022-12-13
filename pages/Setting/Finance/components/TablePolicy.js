@@ -10,7 +10,7 @@ export const TablePolicy = () => {
   return (
     <div>
       <section className="mt-5">
-        <table className="table">
+        <table className={`${styles["table-policy"]} table`}>
           <thead style={{ backgroundColor: "#eee" }}>
             <tr>
               <th>No.</th>
@@ -23,37 +23,39 @@ export const TablePolicy = () => {
           </thead>
           {showTable ? (
             <tbody style={{ borderBottom: "2px solid #c0bfbf" }}>
-              <td>1</td>
-              <td>
-                <div className={`col-10`}>
-                  <input type="text" id="reimName" className={`${styles["input-group"]} form-control`}></input>
-                </div>
-              </td>
-              <td>
-                <div className={`col-10`}>
-                  <input type="text" id="reimName" className={`${styles["input-group"]} form-control`}></input>
-                </div>
-              </td>
-              <td>
-                <div className={`col-10`}>
-                  <input type="text" id="reimName" className={`${styles["input-group"]} form-control`}></input>
-                </div>
-              </td>
-              <td>
-                <button type="button" className={`${styles["btn-box"]} btn btn-outline-secondary btn-sm ms-3`} data-bs-toggle="modal" data-bs-target="#viewFormula" style={{ marginTop: "2px" }}>
-                  FORMULA
-                </button>
-              </td>
-              <td>
-                <div
-                  style={{ cursor: "pointer" }}  
-                  onClick={() => {
-                    setShowTable(false);
-                  }}
-                >
-                  <FontAwesomeIcon icon={faXmark} style={{ color: "#9f0111" }} />
-                </div>
-              </td>
+              <tr className="mt-2">
+                <td>1</td>
+                <td>
+                  <div className={`col-10`}>
+                    <input type="text" id="reimName" className={`${styles["input-group"]} form-control`}></input>
+                  </div>
+                </td>
+                <td>
+                  <div className={`col-10`}>
+                    <input type="text" id="reimName" className={`${styles["input-group"]} form-control`}></input>
+                  </div>
+                </td>
+                <td>
+                  <div className={`col-10`}>
+                    <input type="text" id="reimName" className={`${styles["input-group"]} form-control`}></input>
+                  </div>
+                </td>
+                <td>
+                  <button type="button" className={`${styles["btn-box"]} btn btn-outline-secondary btn-sm ms-3`} data-bs-toggle="modal" data-bs-target="#viewFormula" style={{ marginTop: "2px" }}>
+                    FORMULA
+                  </button>
+                </td>
+                <td>
+                  <div
+                    style={{ cursor: "pointer" }}
+                    onClick={() => {
+                      setShowTable(false);
+                    }}
+                  >
+                    <FontAwesomeIcon icon={faXmark} style={{ color: "#9f0111" }} />
+                  </div>
+                </td>
+              </tr>
             </tbody>
           ) : null}
         </table>

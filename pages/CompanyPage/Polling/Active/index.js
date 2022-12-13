@@ -3,10 +3,11 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "/styles/CompanyPage/Polling/Active.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCircleCheck, faCircleXmark } from "@fortawesome/free-regular-svg-icons";
+// import { faCircleCheck, faCircleXmark } from "@fortawesome/free-regular-svg-icons";
 import Navbar from "../../../Component/navbar";
 import CreateNewPoll from "./createNewPoll";
 import { useRouter } from "next/router";
+import { faCircleCheck, faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
 const Active = () => {
   const router = useRouter();

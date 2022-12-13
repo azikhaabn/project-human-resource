@@ -41,10 +41,16 @@
   cursor: pointer;
 }
 
-.check-input:active, .check-input:checked {
+.check-input:active, 
+.check-input:checked {
   box-shadow: none;
   background-color: #bdbdbd;
   border: none;
+}
+
+.check-input[type="checkbox"]:not(:checked) {
+  box-shadow: none;
+  border-color: #bdbdbd;
 }
 
 .check-radio[name="flexRadioDefault"] {

@@ -44,6 +44,7 @@
 .btn-import input[type="file"] {
   cursor: pointer;
   font-size: 3px;
+  transform: scale(3);
   opacity: 0;
 }
 
