@@ -1,0 +1,86 @@
+.main {
+    height: 100vh;
+  }
+  
+  .h2 {
+    font-size: 20px;
+  }
+  
+  .link {
+    color: #858585;
+  }
+  
+  .link a {
+    margin-left: 5px;
+  }
+  
+  .link a:hover {
+    border-bottom: 1px solid gray;
+    color: gray;
+  }
+  
+  .Label{
+    font-weight: bold;
+  }
+
+  .btnselect{
+    background: #FBFBFB;
+    border: 1px solid #E2E2E2;
+    border-radius: 3px;
+    color: #77777B;
+    padding: 7px 14px;
+    margin-left: -167px;
+  }
+
+  .spanIcon {
+    background-color: #fff;
+    border-radius: 3px;
+  }
+
+  .searchIcon {
+    color: #b9b9bc;
+    
+  }
+  
+  .searchInput {
+    font-size: 15px;
+    border-radius: 3px;
+    border-left: 1px #fff;
+    background-color: #fff;
+    left: auto;
+    
+  }
+  
+  .searchInput:focus,
+  .searchInput:active {
+    /* border-bottom: 2px solid #b6b6b6; */
+    background-color: #fff;
+    /* border: none !important; */
+    box-shadow: none;
+    border-color:  #CED4DA ;
+    border-left: #fff;
+  }
+  
+  .contentTable thead{
+    background: #fbfbfb;
+  }
+
+  .contentTable th{
+    font-weight: 500;
+  }
+
+  .btnarea{
+    padding-left: 160px;
+    padding-top: 25px;
+}
+
+.btnCancel{
+    border: none;
+    background-color: #fff;
+    color: #8b929f;
+    margin-top: 10px;
+}
+
+.btnsubmit{
+    border-radius: 3px;
+}

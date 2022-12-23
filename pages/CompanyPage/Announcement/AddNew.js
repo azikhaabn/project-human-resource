@@ -59,6 +59,7 @@ const AddNewAnnouncement = ({ closeModal, name, value }) => {
               className={`${styles.btnupload} btn btn-outline-secondary mt-2 me-1 btn-sm`}
             >
               UPLOAD FILE
+              <input type="file"></input>
             </button>
 
             <div class="d-flex justify-content-start mt-4">

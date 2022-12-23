@@ -45,7 +45,20 @@
 .btnupload{
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-}
+    position: relative;
+    line-height: 1.5;
+    overflow: hidden;
+    }
+    
+.btnupload input[type="file"] {
+    cursor: pointer;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    transform: scale(3);
+    opacity: 0;
+    }
+
 
 .btnorganization{
     border-radius: 8px;

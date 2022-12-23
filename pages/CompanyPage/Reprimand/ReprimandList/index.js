@@ -78,7 +78,7 @@ export default function ReprimandList() {
             <div class="d-flex justify-content-between align-items-center table-light">
               <button
                 type="button"
-                class="btn btn-outline-secondary btn-sm mt-4 ms-4 mb-3"
+                class="btn btn-outline-secondary btn-sm mt-4 ms-4"
                 data-bs-toggle="modal"
                 data-bs-target="#modalCreate"
               >
@@ -86,16 +86,16 @@ export default function ReprimandList() {
               </button>
               <button
                 type="button"
-                class="btn btn-outline-secondary btn-sm mt-4 me-4 mb-3"
+                class="btn btn-outline-secondary btn-sm mt-4 me-4"
                 data-bs-toggle="modal"
                 data-bs-target="#modalFilter"
               >
                 FILTER
               </button>
             </div>
-            <section class="section-sellect-search mb-4">
+            <section class="section-sellect-search mb-1">
               <div class="container-fluid">
-                <div class="row mt-3 justify-content-end me-3">
+                <div class="row mt-4 justify-content-end me-3">
                   <div class="col-1">
                     <label
                       for="select"
@@ -118,7 +118,7 @@ export default function ReprimandList() {
                     >
                       Search
                     </label>
-                    <div className={`input-group mb-5`}>
+                    <div className={`input-group mb-3`}>
                       <span className={`${styles.spanIcon} input-group-text`}>
                         <FontAwesomeIcon
                           className={styles.searchIcon}
@@ -140,9 +140,9 @@ export default function ReprimandList() {
                 <div class="row align-items-start mx-2">
                   <table
                     {...getTableProps}
-                    className="table mb-3 shadow-sm rounded-3 overflow-hidden align-middle mb-0 bg-white"
+                    className="table mb-3 border rounded-3 overflow-hidden align-middle mb-0 bg-white"
                   >
-                    <thead className="bg-light">
+                    <thead>
                       {headerGroups.map((headerGroup) => (
                         <tr {...headerGroup.getHeaderGroupProps()}>
                           {headerGroup.headers.map((column) => (

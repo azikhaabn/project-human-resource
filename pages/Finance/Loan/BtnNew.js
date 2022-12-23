@@ -8,13 +8,70 @@ import {
   faDownload,
   faMagnifyingGlass,
 } from "@fortawesome/free-solid-svg-icons";
-// import { faArrowRightArrowLeft } from "@fortawesome/free-regular-svg-icons";
+import { useTable } from "react-table";
+import { useGlobalFilter, usePagination } from "@lineup-lite/hooks";
 import Navbar from "../../Component/navbar";
 import { useRouter } from "next/router";
 import NewLoan from "./NewLoan";
 import Pagination from "../../Component/pagination";
 
 export default function New() {
+  const data = React.useMemo(
+    () => [
+      // {
+      //   Name: "Accounting",
+      //   Effective_Date: "BOD",
+      // },
+    ],
+    []
+  );
+
+  const columns = React.useMemo(
+    () => [
+      {
+        Header: "Installment",
+        accessor: "Installment",
+      },
+      {
+        Header: "Payment Date",
+        accessor: "Payment_Date",
+      },
+      {
+        Header: "Basic Payment",
+        accessor: "Basic_Payment",
+      },
+      {
+        Header: "Interest",
+        accessor: "Interest",
+      },
+      {
+        Header: "Total",
+        accessor: "Total",
+      },
+      {
+        Header: "Remaining Loan",
+        accessor: "Remaining_Loan",
+      },
+    ],
+    []
+  );
+  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
+    useTable({
+      columns,
+      data,
+    });
+  const {
+    page,
+    nextPage,
+    previousPage,
+    canNextPage,
+    canPreviousPage,
+    setPageSize,
+    state,
+    setGlobalFilter,
+  } = useTable({ columns, data }, useGlobalFilter, usePagination);
+  const { globalFilter, pageIndex, pageSize } = state;
+
   const router = useRouter();
   const currentRoute = router.pathname;
 
@@ -174,19 +231,47 @@ export default function New() {
                 </div>
               </div>
             </div>
-            <table class={`${styles.table} table`}>
-              <thead class={`${styles.thtable} table-light`}>
-                <tr>
-                  <th scope="col">Installment</th>
-                  <th scope="col">Payment Date</th>
-                  <th scope="col">Basic Payment</th>
-                  <th scope="col"> interest</th>
-                  <th scope="col">Total</th>
-                  <th scope="col"> Remaining Loan</th>
-                </tr>
-              </thead>
-              <tbody className={`${styles.bodytable} border-bottom`}></tbody>
-            </table>
+
+            <section class="section-table">
+              <div className={`${styles.contentTable} container-fluid mt-3`}>
+                <div class="row align-items-start mx-2 ">
+                  <table
+                    {...getTableProps()}
+                    className="table mb-2 rounded-0 overflow-hidden align-middle border mb-0 bg-white"
+                  >
+                    <thead>
+                      {headerGroups.map((headerGroup) => (
+                        <tr {...headerGroup.getHeaderGroupProps()}>
+                          {headerGroup.headers.map((column) => (
+                            <th {...column.getHeaderProps()}>
+                              {column.render("Header")}
+                            </th>
+                          ))}
+                          <th></th>
+                        </tr>
+                      ))}
+                    </thead>
+                    <tbody {...getTableBodyProps()}>
+                      {rows.map((row, i) => {
+                        prepareRow(row);
+                        return (
+                          <tr {...row.getRowProps()}>
+                            {row.cells.map((cell) => {
+                              return (
+                                <td {...cell.getCellProps()}>
+                                  {cell.render("Cell")}
+                                </td>
+                              );
+                            })}
+                            <div className="d-flex justify-content-end me-2"></div>
+                          </tr>
+                        );
+                      })}
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </section>
             <Pagination />
           </div>
           <div

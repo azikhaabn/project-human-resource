@@ -3,19 +3,9 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "/styles/Cdashboard.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBars,
-  faEnvelope,
-  faUser,
-  faArrowRight,
-} from "@fortawesome/free-solid-svg-icons";
-import { useState } from "react";
-import { Button, Modal } from "react-bootstrap";
-
+import { faBars, faEnvelope, faUser } from "@fortawesome/free-solid-svg-icons";
 
 export default function Employee() {
-  const [show, setShow] = useState(false);
-  const [show1, setShow1] = useState(false);
   return (
     <div className={styles.container}>
       <Head>
@@ -31,7 +21,6 @@ export default function Employee() {
             icon={faBars}
             style={{ fontSize: 32, color: "white" }}
           />
-          
           <div className={styles.logo}>
             <Image
               src="/EasyHandler_Hitam.png"
@@ -55,123 +44,60 @@ export default function Employee() {
         </div>
 
         <div className={styles.content}>
-          <Link href="/Company/edit">
-            <a className={styles.editBut}>Edit</a>
-          </Link>
+            <Link href="/Company/edit">
+              <a className={styles.editBut}>Edit</a>
+            </Link>
           <div className={styles.left}>
             <div className={styles.formLogin}>
               <label>Company Name</label>
-              <h6 className=" text-secondary">Akbar Yanto</h6>
+              <input name="name" type="text"></input>
             </div>
 
             <div className={styles.formLogin}>
               <label>Company Address</label>
-              <h6 className=" text-secondary">Akbar Yanto</h6>
+              <input name="address" type="text"></input>
             </div>
 
             <div className={styles.formLogin}>
               <label>PIC Email</label>
-              <h6 className=" text-secondary">Akbar Yanto</h6>
+              <input name="name" type="text"></input>
             </div>
 
             <div className={styles.formLogin}>
               <label>Employee quota</label>
-              <h6 className=" text-secondary">Akbar Yanto</h6>
+              <input name="name" type="text"></input>
             </div>
 
             <div className={styles.formLogin}>
               <label>Company Logo</label>
-              <h6 className=" text-secondary">Akbar Yanto</h6>
+              <input name="name" type="text"></input>
             </div>
           </div>
 
           <div className={styles.right}>
             <div className={styles.formLogin}>
               <label>Company Email</label>
-              <h6 className=" text-secondary">Akbar Yanto</h6>
+              <input name="email" type="text"></input>
             </div>
 
             <div className={styles.formLogin}>
               <label>Company Number</label>
-              <h6 className=" text-secondary">Akbar Yanto</h6>
+              <input name="address" type="text"></input>
             </div>
 
             <div className={styles.formLogin}>
               <label>PIC Number</label>
-              <h6 className=" text-secondary">Akbar Yanto</h6>
+              <input name="name" type="text"></input>
             </div>
 
             <div className={styles.formLogin}>
               <label>Password</label>
-              <h6 className=" text-secondary">Akbar Yanto</h6>
+              <input name="password" type="password"></input>
             </div>
           </div>
-          <Button
-            variant="primary"
-            onClick={() => setShow(!show)}
-            className={styles.addBut}
-          >
-            Add Super Admin
-          </Button>
-
-          <Modal
-            show={show}
-            onHide={() => setShow(!show)}
-            backdrop="static"
-            keyboard={false}
-          >
-            <Modal.Header closeButton>
-              <Modal.Title className={styles.mTitle}>
-                Isi Data SuperAdmin
-              </Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-              <label className={styles.mLabel}>Nama Lengkap</label>
-              <input
-                className={styles.mInput}
-                name="Nama Lengkap"
-                type="text"
-              ></input>
-
-              <label className={styles.mLabel}>Email</label>
-              <input
-                className={styles.mInput}
-                name="Email"
-                type="email"
-              ></input>
-
-              <label className={styles.mLabel}>Nomor Handphone</label>
-              <input
-                className={styles.mInput}
-                name="No Handphone"
-                type="Number"
-              ></input>
-
-              <label className={styles.mLabel}>Password</label>
-              <input
-                className={styles.mInput}
-                name="password"
-                type="password"
-              ></input>
-            </Modal.Body>
-            <Modal.Footer>
-              <Button variant="secondary" onClick={() => setShow(!show)}>
-                Close
-              </Button>
-              <Button
-                className={styles.nextBut}
-                variant="primary"
-                onClick={() => {
-                  setShow(!show);
-                  setTimeout(() => {
-                    setShow1(!show1);
-                  }, 400);
-                }}
-              >
-                Save
-              </Button>
-            </Modal.Footer>
-          </Modal>
+            <Link href="#">
+              <a className={styles.addBut}>Add Super Admin</a>
+            </Link>
         </div>
         <footer>
           <div className={styles.footer}></div>

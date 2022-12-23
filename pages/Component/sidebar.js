@@ -53,9 +53,7 @@ export default function Sidebar() {
           </li>
           <div className={styles.dropdown3}>
             <li>
-              <Link href="/Finance/Reimbursement">
-                <a>Reimbursement</a>
-              </Link>
+              <a href="#">Reimbursement</a>
             </li>
             <li>
               <a href="#">Cash Advance</a>

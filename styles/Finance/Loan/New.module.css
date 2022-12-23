@@ -3,11 +3,10 @@
 }
 
 .mainContent {
-  height: 100vh;
+  height: auto;
 }
 
 .content {
-  margin: 20px 10px 0 10px;
   background: #f8f7f7;
   height: 98vh;
 }
@@ -111,7 +110,7 @@
   font-size: 15px;
   line-height: 1.5;
   color: #424242;
-  font-weight: bold;
+  font-weight: 500;
   /* background-color: #EEEEEE; */
   overflow: hidden;
 }
@@ -134,7 +133,7 @@
   font-size: 15px;
   line-height: 1.5;
   color: #424242;
-  font-weight: bold;
+  font-weight: 500;
   /* background-color: #EEEEEE; */
   overflow: hidden;
 }
@@ -149,14 +148,6 @@
   border-radius: 0;
   border-bottom: 2px solid #b6b6b6;
   color: #7f7f7d;
-}
-
-.formSelect option {
-  background: #980f1b;
-}
-
-.formSelect option:hover {
-  background: #ea454b;
 }
 
 .formSelect:focus,
@@ -194,9 +185,12 @@
   box-shadow: none;
 }
 
-.bodytable {
-  background: #fff;
-  /* width: 50vh; */
+.contentTable thead{
+  background: #EEEEEE;
+}
+
+.contentTable th{
+  font-weight: 500;
 }
 
 

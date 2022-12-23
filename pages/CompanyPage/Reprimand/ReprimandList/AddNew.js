@@ -29,6 +29,7 @@ const AddNewReprimandList = ({ closeModal }) => {
              
             >
               ATTACH FILE (MAX 10 MB)
+              <input type="file"></input>
             </button>
            
             <div class="d-flex justify-content-start mt-4">

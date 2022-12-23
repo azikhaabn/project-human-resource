@@ -1,0 +1,36 @@
+.main {
+    height: auto;
+  }
+  
+  .h2 {
+    font-size: 20px;
+  }
+
+  .btn-sett {
+    border-radius: 5px;
+    color: #8b929f;
+    font-weight: 500;
+  }
+  
+  .btn-sett:hover {
+    /* background: #f2f4f7; */
+    color: #0082D6;
+  }
+  
+  .btn-sett-active {
+    background: #f2f4f7;
+    color: #000;
+  }
+
+  .content p {
+    color: #a9a4a1;
+  }
+  
+  
+  
+
+  
+
+
+  
+  

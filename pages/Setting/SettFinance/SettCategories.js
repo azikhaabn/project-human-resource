@@ -3,12 +3,55 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "/styles/Setting/SettFinance/SettCategories.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
-// import {  } from "@fortawesome/free-regular-svg-icons";
+import {
+  faMagnifyingGlass,
+  faInfoCircle,
+  faPen,
+  faXmark,
+  faTrashCan,
+} from "@fortawesome/free-solid-svg-icons";
+import { useTable } from "react-table";
+import { useGlobalFilter, usePagination } from "@lineup-lite/hooks";
 import { useRouter } from "next/router";
+import CreateCategory from "./Modal/CreateCategories";
 import Navbar from "../../Component/navbar";
+import SettingSidebar from "../SettingSidebar";
 
 const Categories = () => {
+  const data = React.useMemo(
+    () => [
+      // {
+      //   Name: "zikk",
+      // },
+    ],
+    []
+  );
+
+  const columns = React.useMemo(
+    () => [
+      {
+        Header: "Name",
+        accessor: "Name",
+      },
+    ],
+    []
+  );
+  const { getTableProps, getTableBodyProps, headerGroups, rows, prepareRow } =
+    useTable({
+      columns,
+      data,
+    });
+  const {
+    page,
+    nextPage,
+    previousPage,
+    canNextPage,
+    canPreviousPage,
+    setPageSize,
+    state,
+    setGlobalFilter,
+  } = useTable({ columns, data }, useGlobalFilter, usePagination);
+  const { globalFilter, pageIndex, pageSize } = state;
   const router = useRouter();
   const currentRoute = router.pathname;
 
@@ -21,167 +64,30 @@ const Categories = () => {
           <div className={`container-fluid m-0`}>
             <div className={`row`}>
               <div className={`${styles["sidebar"]} col-2 pt-4`}>
-                <h2 className={`${styles.h2} ps-2 mb-3`}>Settings</h2>
-                <div className={`d-flex flex-column`}>
-                  <Link href="./AllProjects">
-                    <a
-                      className={
-                        currentRoute === "/CompanyPage/Task/AllProjects"
-                          ? `${styles["btn-cash"]} ${styles["btn-cash-active"]} py-2 px-2`
-                          : `${styles["btn-cash"]} py-2 px-1 mt-1`
-                      }
-                    >
-                      <span className={`${styles["cash-sidebar"]} ps-2`}>
-                        &nbsp; Account Preference
-                        <FontAwesomeIcon
-                          className={styles.IconSidebar}
-                          icon={faAngleRight}
-                        />
-                      </span>
-                    </a>
-                  </Link>
-                  <Link href="./AllProjects">
-                    <a
-                      className={
-                        currentRoute === "/CompanyPage/Task/AllProjects"
-                          ? `${styles["btn-cash"]} ${styles["btn-cash-active"]} py-2 px-2`
-                          : `${styles["btn-cash"]} py-2 px-1 mt-1`
-                      }
-                    >
-                      <span className={`${styles["cash-sidebar"]} ps-2`}>
-                        &nbsp; Company
-                        <FontAwesomeIcon
-                          className={styles.IconSidebar}
-                          icon={faAngleRight}
-                        />
-                      </span>
-                    </a>
-                  </Link>
-                  <Link href="./AllProjects">
-                    <a
-                      className={
-                        currentRoute === "/CompanyPage/Task/AllProjects"
-                          ? `${styles["btn-cash"]} ${styles["btn-cash-active"]} py-2 px-2`
-                          : `${styles["btn-cash"]} py-2 px-1 mt-1`
-                      }
-                    >
-                      <span className={`${styles["cash-sidebar"]} ps-2`}>
-                        &nbsp; Time Management
-                        <FontAwesomeIcon
-                          className={styles.IconSidebar}
-                          icon={faAngleRight}
-                        />
-                      </span>
-                    </a>
-                  </Link>
-                  <Link href="./AllProjects">
-                    <a
-                      className={
-                        currentRoute === "/CompanyPage/Task/AllProjects"
-                          ? `${styles["btn-cash"]} ${styles["btn-cash-active"]} py-2 px-2`
-                          : `${styles["btn-cash"]} py-2 px-1 mt-1`
-                      }
-                    >
-                      <span className={`${styles["cash-sidebar"]} ps-2`}>
-                        &nbsp; Payroll
-                        <FontAwesomeIcon
-                          className={styles.IconSidebar}
-                          icon={faAngleRight}
-                        />
-                      </span>
-                    </a>
-                  </Link>
-                  <Link href="./SettCategories">
-                    <a
-                      className={
-                        currentRoute === "/Setting/SettFinance/SettCategories"
-                          ? `${styles["btn-cash"]} ${styles["btn-cash-active"]} py-2 px-1`
-                          : `${styles["btn-cash"]} py-2 px-1`
-                      }
-                    >
-                      <span className={`${styles["cash-sidebar"]} ps-2`}>
-                        &nbsp; Finance
-                        <FontAwesomeIcon
-                          className={styles.IconSidebar}
-                          icon={faAngleRight}
-                        />
-                      </span>
-                    </a>
-                  </Link>
-                  <Link href="./AllProjects">
-                    <a
-                      className={
-                        currentRoute === "/CompanyPage/Task/AllProjects"
-                          ? `${styles["btn-cash"]} ${styles["btn-cash-active"]} py-2 px-2`
-                          : `${styles["btn-cash"]} py-2 px-1 mt-1`
-                      }
-                    >
-                      <span className={`${styles["cash-sidebar"]} ps-2`}>
-                        &nbsp; ESS
-                        <FontAwesomeIcon
-                          className={styles.IconSidebar}
-                          icon={faAngleRight}
-                        />
-                      </span>
-                    </a>
-                  </Link>
-                  <Link href="./AllProjects">
-                    <a
-                      className={
-                        currentRoute === "/CompanyPage/Task/AllProjects"
-                          ? `${styles["btn-cash"]} ${styles["btn-cash-active"]} py-2 px-2`
-                          : `${styles["btn-cash"]} py-2 px-1 mt-1`
-                      }
-                    >
-                      <span className={`${styles["cash-sidebar"]} ps-2`}>
-                        &nbsp; Users
-                        <FontAwesomeIcon
-                          className={styles.IconSidebar}
-                          icon={faAngleRight}
-                        />
-                      </span>
-                    </a>
-                  </Link>
-                  <Link href="./AllProjects">
-                    <a
-                      className={
-                        currentRoute === "/CompanyPage/Task/AllProjects"
-                          ? `${styles["btn-cash"]} ${styles["btn-cash-active"]} py-2 px-2`
-                          : `${styles["btn-cash"]} py-2 px-1 mt-1`
-                      }
-                    >
-                      <span className={`${styles["cash-sidebar"]} ps-2`}>
-                        &nbsp; Integration
-                        <FontAwesomeIcon
-                          className={styles.IconSidebar}
-                          icon={faAngleRight}
-                        />
-                      </span>
-                    </a>
-                  </Link>
-                </div>
+                <SettingSidebar />
               </div>
-
               <div className={`col-10 pt-3 ps-4`}>
-                <div className={styles["task-header"]}>
-                  <div className={styles.link}>
-                    <a href="">Settings</a> /<a href="">Finance</a>
+                <div class="d-flex justify-content-between">
+                  <div className={styles["task-header"]}>
+                    <div className={styles.link}>
+                      <a href="">Settings</a> /<a href="">Finance</a>
+                    </div>
+                    <h2 className={`${styles["all-cash-text"]} mb-4`}>
+                      Cash Advance
+                    </h2>
                   </div>
-                  <h2 className={`${styles["all-cash-text"]} mb-4`}>
-                    Cash Advance
-                  </h2>
-                  <div
-                    className={`${styles["create-categories"]} d-flex justify-content-end me-3`}
+                  {/* <div
+                    className={`${styles["create-categories"]} d-flex justify-content-end`}
                   >
                     <button
                       type="button"
-                      class="btn btn-primary"
+                      className="btn btn-primary"
                       data-bs-toggle="modal"
-                      data-bs-target="#exampleModal"
+                      data-bs-target="#modalCreateCategories"
                     >
-                      Create Categories
+                      Create Category
                     </button>
-                  </div>
+                  </div> */}
                 </div>
                 <div className={styles.borderbottom}>
                   <div className={`${styles["main-toggle"]}`}>
@@ -223,33 +129,93 @@ const Categories = () => {
                     </section>
                   </div>
                 </div>
-                <table class="table table-bordered bg-light mt-5">
-                  <thead>
-                    <tr>
-                      <th scope="col">Name</th>
-                    </tr>
-                  </thead>
-                  <tbody></tbody>
-                </table>
-                {/* <div
+
+                <section class="section-table">
+                  <div
+                    className={`${styles.contentTable} container-fluid mt-4`}
+                  >
+                    <div class="row align-items-start">
+                      <table
+                        {...getTableProps()}
+                        className="table mb-3 rounded-0 overflow-hidden align-middle border mb-0 bg-white"
+                      >
+                        <thead>
+                          {headerGroups.map((headerGroup) => (
+                            <tr {...headerGroup.getHeaderGroupProps()}>
+                              {headerGroup.headers.map((column) => (
+                                <th {...column.getHeaderProps()}>
+                                  {column.render("Header")}
+                                </th>
+                              ))}
+                              <th></th>
+                            </tr>
+                          ))}
+                        </thead>
+                        <tbody {...getTableBodyProps()}>
+                          {rows.map((row, i) => {
+                            prepareRow(row);
+                            return (
+                              <tr {...row.getRowProps()}>
+                                {row.cells.map((cell) => {
+                                  return (
+                                    <td {...cell.getCellProps()}>
+                                      {cell.render("Cell")}
+                                    </td>
+                                  );
+                                })}
+                                <div className="d-flex justify-content-end me-2">
+                                  <td>
+                                    <FontAwesomeIcon
+                                      className={styles.EditIcon}
+                                      icon={faPen}
+                                    />
+                                    <FontAwesomeIcon
+                                      className={styles.DeleteIcon}
+                                      icon={faTrashCan}
+                                    />
+                                  </td>
+                                </div>
+                              </tr>
+                            );
+                          })}
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </section>
+
+                <div
                   className={`${styles["content"]} d-flex justify-content-center text-center`}
                 >
                   <div>
                     <img src="/image_580.png" />
                     <h4>There is no data to display</h4>
                     <p>Your cash adavance policy will display here</p>
-                    <a
-                      href="/Setting/SettFinance/CreatePolicy"
-                      className={`${styles["btn-create"]}  btn btn-primary`}
+                    <button
+                      type="button"
+                      className="btn btn-primary"
+                      data-bs-toggle="modal"
+                      data-bs-target="#modalCreateCategories"
                     >
-                      Create Policy
-                    </a>
+                      Create Category
+                    </button>
                   </div>
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
         </main>
+        <div
+          class="modal fade"
+          id="modalCreateCategories"
+          tabindex="-1"
+          aria-labelledby="modalCreateCategories"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <CreateCategory />
+          </div>
+        </div>
       </main>
     </div>
   );

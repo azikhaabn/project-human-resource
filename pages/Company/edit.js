@@ -1,22 +1,25 @@
 import Head from "next/head";
-import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import styles from "/styles/CdashEdit.module.css";
 import React from "react";
+import Popup from "reactjs-popup";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBars,
-  faEnvelope,
-  faUser,
-  faArrowRight,
-} from "@fortawesome/free-solid-svg-icons";
-import { Button, Modal } from "react-bootstrap";
+import { faBars, faEnvelope, faUser } from "@fortawesome/free-solid-svg-icons";
 
-export default function Employee(props) {
-  const [show, setShow] = useState(false);
-  const [show1, setShow1] = useState(false);
+const Modal = () => (
+  <Popup trigger={<button className={styles.changeBut}> Change password </button>} modal>
+    <div className={styles.formLogin}>
+                  <label>Verify Password</label>
+                  <input name="name" type="password"></input>
+                </div>
+                <Link href="#">
+                  <a className={styles.nextBut}>Next</a>
+                </Link>
+  </Popup>
+);
 
+export default function Employee() {
   return (
     <div className={styles.container}>
       <Head>
@@ -57,149 +60,51 @@ export default function Employee(props) {
           <div className={styles.left}>
             <div className={styles.formLogin}>
               <label>Company Name</label>
-              <input name="name" type="text" defaultValue="Akbar Yanto"></input>
+              <input name="name" type="text"></input>
             </div>
 
             <div className={styles.formLogin}>
               <label>Company Address</label>
-              <input
-                name="address"
-                type="text"
-                defaultValue="Akbar Yanto"
-              ></input>
+              <input name="address" type="text"></input>
             </div>
 
             <div className={styles.formLogin}>
               <label>PIC Email</label>
-              <input name="name" type="text" defaultValue="Akbar Yanto"></input>
+              <input name="name" type="text"></input>
             </div>
 
             <div className={styles.formLogin}>
               <label>Employee quota</label>
-              <input name="name" type="text" defaultValue="Akbar Yanto"></input>
+              <input name="name" type="text"></input>
             </div>
           </div>
           <div className={styles.right}>
             <div className={styles.formLogin}>
               <label>Company Email</label>
-              <input
-                name="email"
-                type="Email"
-                defaultValue="Akbar Yanto"
-              ></input>
+              <input name="email" type="Email"></input>
             </div>
 
             <div className={styles.formLogin}>
               <label>Company Number</label>
-              <input
-                name="address"
-                type="text"
-                defaultValue="Akbar Yanto"
-              ></input>
+              <input name="address" type="text"></input>
             </div>
 
             <div className={styles.formLogin}>
               <label>PIC Number</label>
-              <input name="name" type="text" defaultValue="Akbar Yanto"></input>
+              <input name="name" type="text"></input>
             </div>
             <div className={styles.formLogin}>
               <label>Company Logo</label>
-              <input name="name" type="" defaultValue="Akbar Yanto"></input>
+              <input name="name" type=""></input>
             </div>
           </div>
 
-          <Link href="/Company/dashboard">
+          <Link href="#">
             <a className={styles.cancelBut}>Cancel</a>
           </Link>
-          <Link href="/Company/dashboard">
+          <Link href="#">
             <a className={styles.saveBut}>Save</a>
           </Link>
-
-          <Button
-            variant="primary"
-            onClick={() => setShow(!show)}
-            className={styles.changeBut}
-          >
-            Change Password
-          </Button>
-
-          <Modal
-            {...props}
-            centered
-            show={show}
-            onHide={() => setShow(!show)}
-            backdrop="static"
-            keyboard={false}
-          >
-            <Modal.Header closeButton></Modal.Header>
-            <Modal.Body>
-              <label className={styles.mLabel}>Verify Password</label>
-              <input
-                className={styles.verifPass}
-                name="Verify Password"
-                type="Password"
-              ></input>
-            </Modal.Body>
-            <Modal.Footer>
-              <Button
-                className={styles.nextBut}
-                variant="primary"
-                onClick={() => {
-                  setShow(!show);
-                  setTimeout(() => {
-                    setShow1(!show1);
-                  }, 400);
-                }}
-              >
-                Next
-                <FontAwesomeIcon
-                  className={styles.arrow}
-                  icon={faArrowRight}
-                  style={{ fontSize: 16, color: "white" }}
-                />
-              </Button>
-            </Modal.Footer>
-          </Modal>
-
-          <Modal
-            {...props}
-            centered
-            show={show1}
-            onHide={() => setShow1(!show1)}
-            backdrop="static"
-            keyboard={false}
-          >
-            <Modal.Header closeButton></Modal.Header>
-            <Modal.Body>
-              <label className={styles.mLabel}>New Password</label>
-              <input
-                className={styles.verifPass}
-                name="Verify Password"
-                type="Password"
-              ></input>
-
-              <label className={styles.mLabel}>Confirm Password</label>
-              <input
-                className={styles.verifPass}
-                name="Verify Password"
-                type="Password"
-              ></input>
-            </Modal.Body>
-            <Modal.Footer>
-              <Button
-                className={styles.nextBut}
-                variant="primary"
-                onClick={() => setShow1(!show1)}
-              >
-                Save
-                <FontAwesomeIcon
-                  className={styles.arrow}
-                  icon={faArrowRight}
-                  style={{ fontSize: 16, color: "white" }}
-                />
-              </Button>
-            </Modal.Footer>
-          </Modal>
         </div>
         <footer>
           <div className={styles.footer}></div>

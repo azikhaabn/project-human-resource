@@ -85,7 +85,7 @@ export default function ReprimandType() {
                 ADD NEW
               </button>
             </div>
-            <section class="section-sellect-search mb-4">
+            <section class="section-sellect-search mb-1">
               <div class="container-fluid">
                 <div class="row mt-1 justify-content-end me-3">
                   <div class="col-1">
@@ -110,7 +110,7 @@ export default function ReprimandType() {
                     >
                       Search
                     </label>
-                    <div className={`input-group mb-5`}>
+                    <div className={`input-group mb-3`}>
                       <span className={`${styles.spanIcon} input-group-text`}>
                         <FontAwesomeIcon
                           className={styles.searchIcon}
@@ -132,9 +132,9 @@ export default function ReprimandType() {
                 <div class="row align-items-start mx-2">
                   <table
                     {...getTableProps}
-                    className="table mb-3 shadow-sm rounded-3 overflow-hidden align-middle mb-0 bg-white"
+                    className="table mb-3 border rounded-3 overflow-hidden align-middle mb-0 bg-white"
                   >
-                    <thead className="bg-light">
+                    <thead>
                       {headerGroups.map((headerGroup) => (
                         <tr {...headerGroup.getHeaderGroupProps()}>
                           {headerGroup.headers.map((column) => (

@@ -3,13 +3,13 @@
   }
 
 .mainContent{
-    height: 100vh;
+    height: auto;
+    background: #f8f7f7;
 }
   
 .content{
-    margin: 20px 10px 0 10px;
-    background: #F8F7F7;
-    height: 85vh;
+    background: #f8f7f7;
+    height: 100vh;
 }
 
 .btn{
@@ -19,6 +19,25 @@
     border-radius: 10px;
     margin-top: 30px;
     /* overflow: hidden; */
+}
+
+.btnimport {
+  border: 1px solid #7D7D7D;
+  background: #F8F7F7;
+  color: #7D7D7D;
+  border-radius: 10px;
+  position: relative;
+  line-height: 1.5;
+  overflow: hidden;
+}
+
+.btnimport input[type="file"] {
+  cursor: pointer;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  transform: scale(3);
+  opacity: 0;
 }
 
 .formLabel {
@@ -33,16 +52,7 @@
     border-bottom: 2px solid #b6b6b6;
     color: #7f7f7d;
   }
-  
-  .formSelect option{
-    background: #980f1b;
-   
-  }
-  
-  .formSelect option:hover{
-    background: #EA454B;
-  }
-  
+
   .formSelect:focus,
   .formSelect:active {
     border-bottom: 2px solid #b6b6b6;
@@ -78,10 +88,9 @@
     box-shadow: none;
   }
 
-  .thtable{
-    color: #980f1b;
-    background-color: #980f1b;
-    /* font-size: small; */
+  .contentTable thead{
+    background: #EEEEEE;
+    color: #A10101;
   }
 
   .InfoIcon{
@@ -92,20 +101,24 @@
     color: #980f1b;
   }
 
-  .Icon{
+  .EditIcon {
     color: #980f1b;
+    margin-right: 7px;
   }
 
-  .bodytable{
-    background: #fff;
+  .DeleteIcon {
+    color: #980f1b;
+    margin-bottom: -2px;
+    margin-left: 2px;
+    padding-right: 50px;
   }
 
-  /* .btn input[type="file"] {
-    cursor: pointer;
-    position: absolute;
-    left: 0%;
-    top: 0%;
-    transform: scale(3);
-    opacity: 0;
-  } */
+  .delete{
+    border: none;
+    background-color: #fff;
+  }
+
+
+
+  
   

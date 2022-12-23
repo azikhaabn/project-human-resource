@@ -5,6 +5,10 @@
   .h2 {
     font-size: 20px;
   }
+
+  .create-categories{
+    padding: 20px 5px;
+  }
   
   .btn-cash {
     border-radius: 5px;
@@ -94,21 +98,23 @@
     background-color: #005fbf;
     color: #fff;
   }
-  
-  /* .span-underline {
-    z-index: 10;
-    display: inline-block;
-    border-bottom: 3px solid #c02a34;
-    padding-bottom: 15px;
-    border-radius: 3px;
-  } */
-  
-  /* .links {
+
+  .contentTable thead{
+    background: #fbfbfb;
+  }
+
+  .contentTable th{
     font-weight: 500;
-    color: #858585
-  } */
+  }
   
-  /* .cash-sidebar ul li {
-    list-style: none;
-  } */
+  .EditIcon {
+    color: #777777;
+    margin-right: 20px;
+  }
+  
+  .DeleteIcon {
+    color: #777777;
+    margin-bottom: -1px;
+  }
+
   

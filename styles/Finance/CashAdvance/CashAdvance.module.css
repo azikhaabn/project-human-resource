@@ -1,9 +1,10 @@
 .main {
   height: auto;
+  overflow-x: hidden;
 }
 
 .mainContent{
-  height: 100vh;
+  height: auto;
 }
 
 .link{
@@ -34,6 +35,9 @@
     color: #a9a4a1;
 }
 
+.btn-sett{
+  padding: 50px 5px;
+}
 
 .setting-btn{
     border: 1px solid #E6E6E6;
@@ -52,7 +56,10 @@
     color: #fff;
 }
 
-/* .contentTable th{
-    font-size: medium;
-    font-weight: light;
-} */
+.contentTable thead{
+  background: #EEEEEE;
+}
+
+.contentTable th{
+  font-weight: 500;
+}

@@ -9,10 +9,7 @@
     position: absolute;
     left: -15%;
     top: 100%;
-   
-   
 }
-
 
 .modalnewloan h3 {
     color: #980f1b;
@@ -25,8 +22,6 @@
     margin: 2px;
     font-size: small;
 }
-
-
 
 .inputnewloan{
     border-radius: 0;

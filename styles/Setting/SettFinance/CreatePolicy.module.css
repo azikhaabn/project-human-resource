@@ -107,7 +107,7 @@
 }
 
 .btnarea{
-    padding-left: 148px;
+    padding-left: 160px;
     padding-top: 25px;
 }
 
@@ -120,6 +120,34 @@
 .btnsubmit{
     border-radius: 3px;
 }
+
+.spanIcon {
+    background-color: black;
+    border-radius: 3px;
+  }
+
+.searchIcon {
+    color: black;
+  }
+  
+  .searchInput {
+    font-size: 15px;
+    border-radius: 3px;
+    border-left: 1px black;
+    /* background: #fff; */
+    /* left: auto; */
+    
+  }
+  
+  .searchInput:focus,
+  .searchInput:active {
+    /* border-bottom: 2px solid #b6b6b6; */
+    background-color: black;
+    /* border: none !important; */
+    box-shadow: none;
+    border-color:  black ;
+    border-left: #777777;
+  }
 
 
 

@@ -1,0 +1,51 @@
+.main {
+    height: auto;
+  } 
+
+  .content{
+    margin-top: 50px;
+  }
+  
+  .h2 {
+    font-size: 20px;
+  }
+  
+  .content p {
+    color: #a9a4a1;
+  }
+  
+  .sidebar {
+    height: 90vh;
+    border-right: 1px solid #e8e8e8;
+  }
+  
+  .link {
+    color: #858585;
+  }
+  
+  .link a {
+    margin-left: 5px;
+  }
+  
+  .link a:hover {
+    border-bottom: 1px solid gray;
+    color: gray;
+  }
+
+  .btn-create {
+    background-color: #005fbf;
+    color: #fff;
+  }
+  
+  .btn-create:visited {
+    background-color: #005fbf;
+    color: #fff;
+  }
+  
+  .btnBack{
+    border: none;
+    background-color: #fff;
+    color: #1364FF;
+    display: block;
+    margin-top: 15px;
+}

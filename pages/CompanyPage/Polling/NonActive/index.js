@@ -3,13 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "/styles/CompanyPage/Polling/Active.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-// 	faCircleCheck,
-// 	faCircleXmark,
-// } from "@fortawesome/free-regular-svg-icons";
+import { faEnvelope, faUser } from "@fortawesome/free-solid-svg-icons";
+import {
+	faCircleCheck,
+	faCircleXmark,
+} from "@fortawesome/free-regular-svg-icons";
 import { useRouter } from "next/router";
 import Navbar from "../../../Component/navbar";
-import { faCircleCheck, faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 
 const NonActive = () => {
 	const router = useRouter();
